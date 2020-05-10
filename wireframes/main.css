@@ -14,46 +14,37 @@
 
 .navbar * {
     position: absolute;
+    color: white;
 }
 
 .home-link {
-    left: 25px;
-    top: 15px;
+    left: 35px;
+    top: 20px;
 }
 
 .burger {
-    right: 30px;
+    right: 45px;
     top: 15px;
 }
 
 .portfolio-link {
-    right: 220px;
+    right: 265px;
     bottom: 15px;
-}
-
-.home-link, .portfolio-link {
-    text-decoration: none;
-    color: white;
-}
-
-.email-icon, .linkedin-icon {
-    width: 30px;
-    height: 25px;
 }
 
 .email-link {
     right: 200px;
-    bottom: 40px;
+    bottom: 15px;
 }
 
 .linkedin-link {
-    right: 150px;
-    bottom: 40px;
+    right: 115px;
+    bottom: 15px;
 }
 
 .github-link {
-    right: 100px;
-    bottom: 45px;
+    right: 40px;
+    bottom: 15px;
 }
 
 .github-logo {
@@ -71,20 +62,44 @@ main {
     margin-left: 30px;
 }
 
+.headline {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
 .portfolio-button {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 19px;
 }
 
 .headshot-photo {
-    display: block;
+    position: relative;
     width: 65%;
+    height: 175px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+    border: 1px solid black;
+    padding: 0px;
+}
+
+.headshot-placeholder {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -9px;
 }
 
 .bio-header {
     font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.bio-text {
+    margin-top: 0px;
+    font-size: 18px;
 }
 
 .page-title {
