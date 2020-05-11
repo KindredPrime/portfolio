@@ -21,7 +21,7 @@ body {
     position: absolute;
 }
 
-.home-link, .burger, .menu-links * {
+.home-link, .burger, .menu-links a {
     color: white;
 }
 
@@ -75,13 +75,18 @@ body {
 }
 
 .project-slideshow, .project-photo {
-    width: 100%;
     position: relative;
 }
 
+.project-slideshow {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .project-photo {
+    width: 100%;
+    height: 100%;
     border: 5px solid black;
-    height: 200px;
     background: gray;
 }
 
@@ -97,7 +102,6 @@ body {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 78px;
     padding: 0px;
 }
 
@@ -107,9 +111,9 @@ body {
 .left-arrow-button {
     left: 10px;
     clip-path: polygon(
-        70% 71%,
-        24% 52%,
-        24% 44%,
+        70% 70%,
+        26% 51%,
+        26% 44%,
         70% 25%,
         70% 33%,
         35% 48%,
@@ -120,13 +124,13 @@ body {
 .right-arrow-button {
     right: 10px;
     clip-path: polygon(
-        30% 24%,
+        32% 25%,
         76% 45%,
-        76% 52%,
-        30% 71%,
-        30% 63%,
+        76% 51%,
+        32% 70%,
+        32% 63%,
         65% 48%,
-        30% 32%
+        32% 32%
     );
 }
 
@@ -148,18 +152,15 @@ body {
     text-align: center;
     border: 1px solid black;
     padding: 5px;
-    margin-right: 8px;
 }
 
 .tech-logo p {
     margin: 0px;
-    font-size: 13px;
 }
 
 .project-links {
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 15px;
 }
 
 .project-repo-link, .project-live-link {
@@ -220,6 +221,39 @@ body {
     .bio-text {
         font-size: 18px;
     }
+
+    .project-slideshow {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .left-arrow-button, .right-arrow-button {
+        top: 78px;
+    }
+
+    .project-title {
+        font-size: 23px;
+    }
+
+    .tech-logo {
+        margin-right: 8px;
+    }
+
+    .tech-logo p {
+        font-size: 13px;
+    }
+
+    .project-description {
+        font-size: 17px;
+    }
+
+    .project-links {
+        margin-bottom: 25px;
+    }
+
+    .project-repo-link, .project-live-link {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 650px) {
@@ -274,6 +308,39 @@ body {
     .bio-text {
         font-size: 21px;
     }
+
+    .project-slideshow {
+        width: 400px;
+        height: 300px;
+    }
+
+    .left-arrow-button, .right-arrow-button {
+        top: 127px;
+    }
+
+    .project-title {
+        font-size: 25px;
+    }
+
+    .tech-logo {
+        margin-right: 15px;
+    }
+
+    .tech-logo p {
+        font-size: 17px;
+    }
+
+    .project-description {
+        font-size: 20px;
+    }
+
+    .project-links {
+        margin-bottom: 25px;
+    }
+
+    .project-repo-link, .project-live-link {
+        font-size: 17px;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -326,5 +393,42 @@ body {
 
     .bio-text {
         font-size: 23px;
+    }
+
+    .page-title {
+        font-size: 40px;
+    }
+
+    .project-slideshow {
+        width: 800px;
+        height: 500px;
+    }
+
+    .left-arrow-button, .right-arrow-button {
+        top: 227px;
+    }
+
+    .project-title {
+        font-size: 30px;
+    }
+
+    .tech-logo {
+        margin-right: 20px;
+    }
+
+    .tech-logo p {
+        font-size: 17px;
+    }
+    
+    .project-description {
+        font-size: 23px;
+    }
+
+    .project-links {
+        margin-bottom: 45px;
+    }
+
+    .project-repo-link, .project-live-link {
+        font-size: 19px;
     }
 }
