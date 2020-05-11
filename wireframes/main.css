@@ -14,6 +14,7 @@ body {
     left: 0px;
     width: 100%;
     height: 100px;
+    z-index: 1;
 }
 
 .home-link, .burger, .menu-links {
@@ -75,17 +76,28 @@ body {
 
 .project-slideshow, .project-photo {
     width: 100%;
+    position: relative;
 }
 
-.project-slideshow {
-    position: relative;
+.project-photo {
+    border: 5px solid black;
+    height: 200px;
+    background: gray;
+}
+
+.project-photo-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9px;
+    margin-left: -43px;
 }
 
 .left-arrow-button, .right-arrow-button {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 60px;
+    top: 78px;
     padding: 0px;
 }
 
@@ -132,29 +144,16 @@ body {
     padding: 0px;
 }
 
-.html-logo {
-    width: 45px;
-    height: 35px;
+.tech-logo {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 8px;
 }
 
-.css-logo {
-    width: 35px;
-    height: 35px;
-}
-
-.jQuery-logo {
-    width: 55px;
-    height: 45px;
-}
-
-.git-logo {
-    width: 55px;
-    height: 25px;
-}
-
-.html-logo, .css-logo, .jQuery-logo, .git-logo {
-    margin-right: 5px;
-    margin-left: 0px;
+.tech-logo p {
+    margin: 0px;
+    font-size: 13px;
 }
 
 .project-links {
