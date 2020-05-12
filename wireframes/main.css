@@ -6,6 +6,31 @@ body {
     margin: 0px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Hind";
+}
+
+p, a, button {
+    font-family: "Open Sans";
+}
+
+a {
+    font-size: 16px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+button {
+    font-size: 18px;
+}
+
+div p {
+    font-size: 13px;
+}
+
 .navbar {
     background-color: black;
     color: white;
@@ -81,7 +106,7 @@ body {
     top: 50%;
     left: 50%;
     margin-top: -9px;
-    margin-left: -43px;
+    margin-left: -41px;
 }
 
 .left-arrow-button, .right-arrow-button {
@@ -162,22 +187,18 @@ body {
 }
 
 @media screen and (max-width: 649px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+    
     main {
         margin-top: 120px;
         margin-right: 30px;
         margin-left: 30px;
-    }
-
-    .headline-text {
-        font-size: 25px;
-    }
-
-    .portfolio-button {
-        font-size: 19px;
-    }
-
-    .bio-header {
-        font-size: 25px;
     }
 
     .headshot-photo {
@@ -188,8 +209,8 @@ body {
         margin-top: 20px;
     }
 
-    .bio-text {
-        font-size: 18px;
+    .page-title {
+        margin-bottom: 30px;
     }
 
     .project-slideshow {
@@ -201,48 +222,28 @@ body {
         top: 78px;
     }
 
-    .project-title {
-        font-size: 23px;
-    }
-
     .tech-logo {
         margin-right: 8px;
-    }
-
-    .tech-logo p {
-        font-size: 13px;
-    }
-
-    .project-description {
-        font-size: 17px;
     }
 
     .project-links {
         margin-bottom: 25px;
     }
-
-    .project-repo-link, .project-live-link {
-        font-size: 15px;
-    }
 }
 
 @media screen and (min-width: 650px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+    
     main {
         margin-top: 140px;
         margin-right: 10%;
         margin-left: 10%;
-    }
-
-    .headline-text {
-        font-size: 28px;
-    }
-
-    .portfolio-button {
-        font-size: 22px;
-    }
-
-    .bio-header {
-        font-size: 26px;
     }
 
     .headshot-photo {
@@ -254,9 +255,9 @@ body {
         margin-top: 45px;
         margin-bottom: 10px;
     }
-
-    .bio-text {
-        font-size: 21px;
+    
+    .page-title {
+        margin-bottom: 40px;
     }
 
     .project-slideshow {
@@ -268,47 +269,27 @@ body {
         top: 127px;
     }
 
-    .project-title {
-        font-size: 25px;
-    }
-
     .tech-logo {
         margin-right: 15px;
-    }
-
-    .tech-logo p {
-        font-size: 17px;
-    }
-
-    .project-description {
-        font-size: 20px;
     }
 
     .project-links {
         margin-bottom: 25px;
     }
-
-    .project-repo-link, .project-live-link {
-        font-size: 17px;
-    }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 31px;
+    }
+    
     main {
         margin-left: 12%;
         margin-right: 12%;
-    }
-
-    .headline-text {
-        font-size: 30px;
-    }
-
-    .portfolio-button {
-        font-size: 24px;
-    }
-
-    .bio-header {
-        font-size: 28px;
     }
 
     .headshot-photo {
@@ -321,12 +302,8 @@ body {
         margin-bottom: 10px;
     }
 
-    .bio-text {
-        font-size: 23px;
-    }
-
     .page-title {
-        font-size: 40px;
+        margin-bottom: 40px;
     }
 
     .project-slideshow {
@@ -338,27 +315,11 @@ body {
         top: 227px;
     }
 
-    .project-title {
-        font-size: 30px;
-    }
-
     .tech-logo {
         margin-right: 20px;
     }
 
-    .tech-logo p {
-        font-size: 17px;
-    }
-    
-    .project-description {
-        font-size: 23px;
-    }
-
     .project-links {
         margin-bottom: 45px;
-    }
-
-    .project-repo-link, .project-live-link {
-        font-size: 19px;
     }
 }
