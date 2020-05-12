@@ -4,6 +4,8 @@
 
 body {
     margin: 0px;
+    color: white;
+    background-color: #5E3F09;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,6 +18,8 @@ p, a, button {
 
 a {
     font-size: 16px;
+    color: #00FFFF;
+    font-weight: 900;
 }
 
 p {
@@ -25,6 +29,9 @@ p {
 
 button {
     font-size: 18px;
+    font-weight: 700;
+    background-color: #00FFFF;
+    border-color: #A1A1A1;
 }
 
 div p {
@@ -40,6 +47,7 @@ div p {
     width: 100%;
     height: 100px;
     z-index: 1;
+    border-bottom: 1px solid #A1A1A1;
 }
 
 .navbar p {
@@ -63,6 +71,7 @@ div p {
     position: relative;
     border: 1px solid black;
     padding: 0px;
+    background-color: #A1A1A1;
 }
 
 .headshot-placeholder {
@@ -71,6 +80,7 @@ div p {
     left: 50%;
     margin-left: -50px;
     margin-top: -9px;
+    color: black;
 }
 
 .bio-header {
@@ -98,7 +108,7 @@ div p {
     width: 100%;
     height: 100%;
     border: 5px solid black;
-    background: gray;
+    background-color: #A1A1A1;
 }
 
 .project-photo-placeholder {
@@ -107,6 +117,7 @@ div p {
     left: 50%;
     margin-top: -9px;
     margin-left: -41px;
+    color: black;
 }
 
 .left-arrow-button, .right-arrow-button {
@@ -163,10 +174,12 @@ div p {
     text-align: center;
     border: 1px solid black;
     padding: 5px;
+    background-color: #A1A1A1;
 }
 
 .tech-logo p {
     margin: 0px;
+    color: black;
 }
 
 .project-links {
@@ -175,7 +188,6 @@ div p {
 }
 
 .project-repo-link, .project-live-link {
-    color: black;
     font-weight: 700;
 }
 
