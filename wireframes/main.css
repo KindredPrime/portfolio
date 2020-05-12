@@ -17,25 +17,12 @@ body {
     z-index: 1;
 }
 
-.home-link, .burger, .menu-links {
+.navbar p {
     position: absolute;
-}
-
-.home-link, .burger, .menu-links a {
-    color: white;
-}
-
-.home-link {
-    top: 20px;
-}
-
-.burger {
-    right: 45px;
-    top: 15px;
-}
-
-.menu-links {
-    bottom: 15px;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -9px;
 }
 
 .headline-text {
@@ -175,22 +162,6 @@ body {
 }
 
 @media screen and (max-width: 649px) {
-    .home-link, .portfolio-link, .email-link, .linkedin-link, .github-link {
-        font-size: 18px;
-    }
-    
-    .home-link {
-        left: 30px;
-    }
-
-    .menu-links {
-        right: 30px;
-    }
-    
-    .menu-links * {
-        margin-left: 15px;
-    }
-
     main {
         margin-top: 120px;
         margin-right: 30px;
@@ -256,26 +227,6 @@ body {
 }
 
 @media screen and (min-width: 650px) {
-    .home-link, .portfolio-link, .email-link, .linkedin-link, .github-link {
-        font-size: 23px;
-    }
-
-    .home-link {
-        left: 10%;
-    }
-    
-    .burger {
-        display: none;
-    }
-
-    .menu-links {
-        right: 10%;
-    }
-    
-    .menu-links * {
-        margin-left: 35px;
-    }
-
     main {
         margin-top: 140px;
         margin-right: 10%;
@@ -343,26 +294,6 @@ body {
 }
 
 @media screen and (min-width: 1100px) {
-    .home-link, .portfolio-link, .email-link, .linkedin-link, .github-link {
-        font-size: 25px;
-    }
-
-    .home-link {
-        left: 12%;
-    }
-    
-    .burger {
-        display: none;
-    }
-
-    .menu-links {
-        right: 12%;
-    }
-
-    .menu-links * {
-        margin-left: 50px;
-    }
-
     main {
         margin-left: 12%;
         margin-right: 12%;
