@@ -95,7 +95,7 @@ div p {
     text-align: center;
 }
 
-.project-slideshow, .project-photo {
+.project-slideshow, .project-photos {
     position: relative;
 }
 
@@ -104,20 +104,25 @@ div p {
     margin-right: auto;
 }
 
-.project-photo {
+.project-photos {
     width: 100%;
     height: 100%;
     border: 5px solid black;
     background-color: #A1A1A1;
 }
 
-.project-photo-placeholder {
+.project-photo {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -9px;
     margin-left: -41px;
     color: black;
+    display: none;
+}
+
+.default-photo {
+    display: block;
 }
 
 .left-arrow-button, .right-arrow-button {
