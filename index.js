@@ -14,9 +14,11 @@ $(function() {
         project photo slideshow
     */
     function onLastPhoto(projectID) {
-        let currentProject = $(`section.project[data-project-id="${projectID}"]`);
-        let currentPhoto = currentProject.find(`.project-photo.js-current-photo`);
-        
+        let currentProject = 
+            $(`section.project[data-project-id="${projectID}"]`);
+        let currentPhoto = 
+            currentProject.find(`.project-photo.js-current-photo`);
+
         let nextPhoto = currentPhoto.next(".project-photo");
         if(nextPhoto.length === 0) { //i.e. there aren't any next photos
             return true;
@@ -31,8 +33,10 @@ $(function() {
         the provided projectID
     */
     function hideCurrentProjectPhoto(projectID) {
-        let currentProject = $(`section.project[data-project-id="${projectID}"]`);
-        let currentPhoto = currentProject.find(`.project-photo.js-current-photo`);
+        let currentProject = 
+            $(`section.project[data-project-id="${projectID}"]`);
+        let currentPhoto = 
+            currentProject.find(`.project-photo.js-current-photo`);
 
         currentPhoto.removeClass("js-current-photo");
         currentPhoto.hide();
@@ -43,10 +47,11 @@ $(function() {
     */
     function showProjectPhoto(projectID, photoID) {
         let project = $(`section.project[data-project-id="${projectID}"]`);
-        let photoToShow = project.find(`.project-photo[data-photo-id="${photoID}"]`);
+        let photoToShow = project
+            .find(`.project-photo[data-photo-id="${photoID}"]`);
 
         /* 
-        Checks if there are photos with that ID to show (e.g. there might not be a "next" photo after the current one)
+            Checks if there are photos with that ID to show
         */
         if(photoToShow.length > 0) {
             photoToShow.addClass("js-current-photo");
@@ -60,8 +65,11 @@ $(function() {
     */
     function handleNextImage() {
         $(".right-arrow-button").click(event => {
-            let projectID = $(event.currentTarget).parents("section.project").data("project-id");
-            let currentPhoto = $(event.currentTarget).parents(".project-slideshow").find(".project-photo.js-current-photo");
+            let projectID = $(event.currentTarget).parents("section.project")
+                .data("project-id");
+            let currentPhoto = $(event.currentTarget)
+                .parents(".project-slideshow")
+                .find(".project-photo.js-current-photo");
             let currentPhotoID = currentPhoto.data("photo-id");
 
             let notOnLastPhoto = !onLastPhoto(projectID);
@@ -75,12 +83,44 @@ $(function() {
     }
 
     /*
+        Returns true if the currently-displayed photo is the first photo in 
+        its project photo slideshow
+    */
+    function onFirstPhoto(projectID) {
+        let currentProject = 
+            $(`section.project[data-project-id="${projectID}"]`);
+        let currentPhoto = currentProject
+            .find(`.project-photo.js-current-photo`);
+
+        let prevPhoto = currentPhoto.prev(".project-photo");
+        if(prevPhoto.length === 0) { //i.e. there aren't any previous photos
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /*
         Handles switching to the previous image when the left arrow button is
         clicked
     */
     function handlePrevImage() {
         $(".left-arrow-button").click(event => {
-            alert("Previous button clicked");
+            let projectID = $(event.currentTarget).parents("section.project")
+                .data("project-id");
+            let currentPhoto = $(event.currentTarget)
+                .parents(".project-slideshow")
+                .find(".project-photo.js-current-photo");
+            let currentPhotoID = currentPhoto.data("photo-id");
+
+            let notOnFirstPhoto = !onFirstPhoto(projectID);
+            if(notOnFirstPhoto) {
+                hideCurrentProjectPhoto(projectID);
+
+                let prevPhotoID = currentPhotoID - 1;
+                showProjectPhoto(projectID, prevPhotoID);
+            }
         });
     }
 
