@@ -10,6 +10,16 @@ $(function() {
     }
 
     /*
+        Assigns a unique ID to each project photo on the page
+    */
+   function assignProjectPhotoIDs() {
+        let photos = $(".project-photo");
+        for(photo of photos) {
+            $(photo).attr("data-photo-id", cuid());
+        }
+   }
+
+    /*
         Returns true if the currently-displayed photo is the last photo in its 
         project photo slideshow
     */
@@ -70,13 +80,13 @@ $(function() {
             let currentPhoto = $(event.currentTarget)
                 .parents(".project-slideshow")
                 .find(".project-photo.js-current-photo");
-            let currentPhotoID = currentPhoto.data("photo-id");
 
             let notOnLastPhoto = !onLastPhoto(projectID);
             if(notOnLastPhoto) {
                 hideCurrentProjectPhoto(projectID);
 
-                let nextPhotoID = currentPhotoID + 1;
+                let nextPhotoID = currentPhoto.next(".project-photo")
+                    .data("photo-id");
                 showProjectPhoto(projectID, nextPhotoID);
             }
         });
@@ -112,19 +122,20 @@ $(function() {
             let currentPhoto = $(event.currentTarget)
                 .parents(".project-slideshow")
                 .find(".project-photo.js-current-photo");
-            let currentPhotoID = currentPhoto.data("photo-id");
 
             let notOnFirstPhoto = !onFirstPhoto(projectID);
             if(notOnFirstPhoto) {
                 hideCurrentProjectPhoto(projectID);
 
-                let prevPhotoID = currentPhotoID - 1;
+                let prevPhotoID = currentPhoto.prev(".project-photo")
+                    .data("photo-id");
                 showProjectPhoto(projectID, prevPhotoID);
             }
         });
     }
 
     assignProjectIDs();
+    assignProjectPhotoIDs();
     handleNextImage();
     handlePrevImage();
 });
