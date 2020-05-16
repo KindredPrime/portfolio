@@ -1,4 +1,4 @@
-$(function() {
+function initializeIds() {
     /*
         Assigns a unique ID to each project on the page
     */
@@ -12,13 +12,18 @@ $(function() {
     /*
         Assigns a unique ID to each project photo on the page
     */
-   function assignProjectPhotoIDs() {
+    function assignProjectPhotoIDs() {
         let photos = $(".project-photo");
         for(photo of photos) {
             $(photo).attr("data-photo-id", cuid());
         }
-   }
+    }
 
+    assignProjectIDs();
+    assignProjectPhotoIDs();
+}
+
+function handlePhotoTransitions() {
     /*
         Returns true if the currently-displayed photo is the last photo in its 
         project photo slideshow
@@ -133,9 +138,12 @@ $(function() {
             }
         });
     }
-
-    assignProjectIDs();
-    assignProjectPhotoIDs();
+    
     handleNextImage();
     handlePrevImage();
+}
+
+$(function() {
+    initializeIds();
+    handlePhotoTransitions();
 });
