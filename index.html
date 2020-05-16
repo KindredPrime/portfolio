@@ -37,18 +37,30 @@
 
     <main>
         <section class="headline">
-            <p class="headline-text">Headline: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquet ex nec ligula fermentum, quis. </p>
+            <p class="headline-text">
+                My name is Ken Wright and I enjoy writing code that manipulates 
+                data and data structures.
+            </p>
 
             <button class="portfolio-button">Portfolio</button>
         </section>
 
         <section class="bio">
-            <div class="headshot-photo">
-                <p class="headshot-placeholder">Headshot photo</p>
-            </div>
-            <h1 class="bio-header">Bio section</h1>
-            <p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra ipsum at bibendum semper. Fusce eget ex interdum, eleifend quam id, congue dolor. Donec eu mattis purus, eget pellentesque tortor. Ut venenatis nulla ut mi tincidunt, et commodo est rhoncus. Vestibulum ut vehicula metus. Mauris volutpat nulla eu felis posuere porttitor.</p>
-            <p class="bio-text">Ut nunc lacus, tristique vel dignissim a, rhoncus sed turpis. Duis nec magna euismod enim congue suscipit. Sed gravida quam magna, non rutrum enim suscipit vel. Nulla sed tristique massa, at sodales magna. Vestibulum sollicitudin congue elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque neque lacinia, sodales neque in, pellentesque felis.</p>
+            <img src="images/headshot-photo.jpg" alt="Headshot photo" class="headshot-photo">
+            <h1 class="bio-header">A little more about me</h1>
+            <p class="bio-text">
+                I love writing code.  It gives me an opportunity to flex my 
+                creativity muscles by writing code that is flexible, easy to  
+                understand, and easy to build on top of.  Writing code also 
+                gives me an opportunity to come up with interesting solutions 
+                to complex problems.
+            </p>
+            <p class="bio-text">
+                Outside of writing code, I enjoy: making sculptures of animals, 
+                walking in parks and on nature paths, playing video games, and 
+                volunteering for community organizations.  And I enjoy finding 
+                new activities, interests, and hobbies.
+            </p>
         </section>
 
         
@@ -58,12 +70,13 @@
 
         <section class="project">
             <div class="project-slideshow">
-                <div class="project-photos">
-                    <p class="project-photo default-photo js-current-photo">
-                        Project photo 1
-                    </p>
-                    <p class="project-photo">Project photo 2</p>
-                </div>
+                <section class="project-photos">
+                    <img src="images/quiz-app-images/start-page_compressed.png" alt="Quiz App start page" class="project-photo default-photo js-current-photo">
+                    <img src="images/quiz-app-images/question-page_compressed.png" alt="Quiz App question page" class="project-photo">
+                    <img src="images/quiz-app-images/correct-answer-page_compressed.png" alt="Quiz App correct answer" class="project-photo">
+                    <img src="images/quiz-app-images/wrong-answer-page_compressed.png" alt="Quiz App wrong answer" class="project-photo">
+                    <img src="images/quiz-app-images/quiz-results-page_compressed.png" alt="Quiz App results page" class="project-photo">
+                </section>
                 
                 <button type="button" class="left-arrow-button"><img src="images/left-arrow.png" alt="previous image" class="arrow-img"></button>
                 
@@ -73,21 +86,34 @@
             <h2 class="project-title">Project Title</h2>
             
             <div class="project-technologies">
-                <div class="tech-logo"><p>HTML 5 logo</p></div>
-                <div class="tech-logo"><p>CSS logo</p></div>
-                <div class="tech-logo"><p>jQuery logo</p></div>
-                <div class="tech-logo"><p>Git logo</p></div>
-                <div class="tech-logo"><p>GitHub logo</p></div>
+                <img src="images/HTML5-logo.png" alt="HTML5" class="tech-logo html-logo">
+                <img src="images/CSS-logo.png" alt="CSS" class="tech-logo css-logo">
+                <img src="images/jquery-logo.png" alt="jQuery" class="tech-logo jquery-logo">
+                <img src="images/git-logo.jpg" alt="Git" class="tech-logo git-logo">
+                <img src="images/GitHub-Logos/GitHub_Logo.png" alt="GitHub" class="tech-logo github-logo">
             </div>
             
             <p class="project-description"> 
-                Project Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue eget ante vitae convallis. Nullam maximus turpis et ipsum condimentum, sed iaculis orci egestas. Nulla dapibus tristique bibendum. Phasellus at purus eget tortor aliquam condimentum. In at posuere arcu. Quisque commodo pulvinar nisi sit amet maximus. Curabitur dignissim, mauris sit amet facilisis ultrices, justo justo porttitor lorem, id tincidunt eros ante nec ipsum. Quisque pellentesque porttitor ante ultricies suscipit. Suspendisse congue mauris eget tellus luctus congue. 
+                This is an interactive web app that allows users to take a  
+                quiz.  The app goes through questions one by one, rendering  
+                them in a &lt;form&gt; element, and keeps track of the question 
+                number and the user’s score.  The app also tells the user the 
+                correct answer to the question after they pick their answer.
+                When the quiz is over, the app tells the user their final score
+                and allows them to restart the quiz.  The app uses responsive 
+                design, semantic HTML, and it follows a11y best practices.
             </p>
             
             <div class="project-links">
-                <a href="" class="project-repo-link">GitHub</a>
+                <a href="https://github.com/KindredPrime/quiz-app"
+                class="project-repo-link">
+                    GitHub
+                </a>
                 <span class="project-links-divider">|</span>
-                <a href="" class="project-live-link">Demo</a>
+                <a href="https://kindredprime.github.io/quiz-app/" 
+                class="project-live-link">
+                    Demo
+                </a>
             </div>
         </section>
     </main>
