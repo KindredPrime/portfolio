@@ -50,12 +50,44 @@ div p {
     border-bottom: 1px solid #A1A1A1;
 }
 
-.navbar p {
+.home-link, .burger {
     position: absolute;
-    left: 50%;
-    margin-left: -25px;
-    top: 50%;
-    margin-top: -9px;
+}
+
+.home-link {
+    top: 20px;
+}
+
+.burger {
+    right: 30px;
+    top: 15px;
+}
+
+.home-link, .menu-links * {
+    text-decoration: none;
+}
+
+.menu-links {
+    position: relative;
+    top: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.email-icon, .linkedin-icon {
+    width: 30px;
+    height: 25px;
+}
+
+.github-logo {
+    width: 70px;
+    height: 30px;
+}
+
+.email-icon, .github-logo {
+    background-color: white;
 }
 
 .headline-text {
@@ -192,6 +224,23 @@ div p {
     h2 {
         font-size: 27px;
     }
+
+    .navbar {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .home-link {
+        left: 30px;
+    }
+
+    .portfolio-link, .email-link-with-image, .linkedin-link, .github-link {
+        margin-left: 7%;
+    }
+
+    .email-link-with-text {
+        display: none;
+    }
     
     main {
         margin-top: 120px;
@@ -239,6 +288,9 @@ div p {
     }
 }
 
+/*
+    Tablet devices
+*/
 @media screen and (min-width: 650px) {
     h1 {
         font-size: 36px;
@@ -247,7 +299,28 @@ div p {
     h2 {
         font-size: 27px;
     }
+
+    .navbar {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .home-link {
+        left: 10%;
+    }
     
+    .burger {
+        display: none;
+    }
+
+    .portfolio-link, .email-link-with-text, .linkedin-link, .github-link {
+        margin-left: 4%;
+    }
+
+    .email-link-with-image {
+        display: none;
+    }
+
     main {
         margin-top: 140px;
         margin-right: 10%;
@@ -296,6 +369,9 @@ div p {
     }
 }
 
+/*
+    Desktop/laptop computers
+*/
 @media screen and (min-width: 1000px) {
     h1 {
         font-size: 40px;
@@ -303,6 +379,27 @@ div p {
 
     h2 {
         font-size: 31px;
+    }
+    
+    .navbar {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .home-link {
+        left: 12%;
+    }
+    
+    .burger {
+        display: none;
+    }
+
+    .portfolio-link, .email-link-with-text, .linkedin-link, .github-link {
+        margin-left: 40px;
+    }
+
+    .email-link-with-image {
+        display: none;
     }
     
     main {
