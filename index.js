@@ -70,7 +70,7 @@ function handlePhotoTransitions() {
         */
         if(photoToShow.length > 0) {
             photoToShow.addClass("js-current-photo");
-            photoToShow.show();
+            photoToShow.show("fade", "linear", 600);
         }
     }
 
