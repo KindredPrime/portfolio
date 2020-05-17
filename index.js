@@ -155,7 +155,7 @@ function handlePhotoTransitions() {
     Handles expanding and collapsing the menu in the nav bar on mobile devices
 */
 function handleMenuChanges() {
-    $(".burger").click(event => {
+    $("button.menu").click(event => {
         $(".navbar").toggleClass("extended");
         $(".menu-links").toggleClass("hidden-mobile");
         $("main").toggleClass("extended");
@@ -180,7 +180,7 @@ function handleLayoutChanges() {
         Handles switching to the homepage layout
     */
     function handleSwitchToHomepageLayout() {
-        $(".home-link").click(event => {
+        $(".home-button").click(event => {
             event.preventDefault();
             loadLayout("homepage");
         });
@@ -190,11 +190,6 @@ function handleLayoutChanges() {
         Handles switching to the portfolio layout
     */
     function handleSwitchToPortfolioLayout() {
-        $(".portfolio-link").click(event => {
-            event.preventDefault();
-            loadLayout("portfolio");
-        });
-
         $(".portfolio-button").click(event => {
             event.preventDefault();
             loadLayout("portfolio");
