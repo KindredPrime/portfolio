@@ -1,4 +1,7 @@
-function initializeIds() {
+/*
+    Assigns IDs to elements in the page for later use by jQuery
+*/
+function assignIDs() {
     /*
         Assigns a unique ID to each project on the page
     */
@@ -23,6 +26,10 @@ function initializeIds() {
     assignProjectPhotoIDs();
 }
 
+/*
+    Handles switching between photos in the photo slideshows for projects in 
+    the portfolio
+*/
 function handlePhotoTransitions() {
     /*
         Returns true if the currently-displayed photo is the last photo in its 
@@ -58,7 +65,8 @@ function handlePhotoTransitions() {
     }
 
     /*
-        Shows on the page the project photo with the provided photo ID, in the project with the provided projectID
+        Shows on the page the project photo with the provided photo ID, in the 
+        project with the provided projectID
     */
     function showProjectPhoto(projectID, photoID) {
         let project = $(`section.project[data-project-id="${projectID}"]`);
@@ -78,7 +86,7 @@ function handlePhotoTransitions() {
         Handles switching to the next photo when the right arrow button is 
         clicked
     */
-    function handleNextImage() {
+    function handleNextPhoto() {
         $(".right-arrow-button").click(event => {
             let projectID = $(event.currentTarget).parents("section.project")
                 .data("project-id");
@@ -117,10 +125,10 @@ function handlePhotoTransitions() {
     }
 
     /*
-        Handles switching to the previous image when the left arrow button is
+        Handles switching to the previous photo when the left arrow button is
         clicked
     */
-    function handlePrevImage() {
+    function handlePrevPhoto() {
         $(".left-arrow-button").click(event => {
             let projectID = $(event.currentTarget).parents("section.project")
                 .data("project-id");
@@ -139,10 +147,13 @@ function handlePhotoTransitions() {
         });
     }
     
-    handleNextImage();
-    handlePrevImage();
+    handleNextPhoto();
+    handlePrevPhoto();
 }
 
+/*
+    Handles expanding and collapsing the menu in the nav bar on mobile devices
+*/
 function handleMenuChanges() {
     $(".burger").click(event => {
         $(".navbar").toggleClass("extended");
@@ -195,7 +206,7 @@ function handleLayoutChanges() {
 }
 
 $(function() {
-    initializeIds();
+    assignIDs();
     handlePhotoTransitions();
     handleMenuChanges();
     handleLayoutChanges();
