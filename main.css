@@ -99,8 +99,12 @@ div p {
     display: none;
 }
 
+main {
+    margin-bottom: 40px;
+}
+
 .headline-text {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-left: 0px;
 }
 
@@ -124,6 +128,7 @@ div p {
 
 .bio-header {
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .bio-text {
@@ -175,6 +180,7 @@ div p {
 
 .project-title {
     margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 .project-technologies {
@@ -219,6 +225,7 @@ div p {
 @media screen and (max-width: 649px) {
     h1 {
         font-size: 36px;
+        text-align: center;
     }
 
     h2 {
@@ -237,6 +244,10 @@ div p {
 
     .home-link {
         left: 30px;
+    }
+
+    .hidden-mobile {
+        display: none;
     }
 
     .portfolio-link, .email-link-with-image, .linkedin-link, .github-link {
@@ -260,7 +271,7 @@ div p {
     .headshot-photo {
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px;
+        margin-top: 25px;
         width: 65%;
         max-width: 250px;
     }

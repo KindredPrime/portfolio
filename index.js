@@ -157,7 +157,7 @@ function handlePhotoTransitions() {
 function handleMenuChanges() {
     $(".burger").click(event => {
         $(".navbar").toggleClass("extended");
-        $(".menu-links").toggleClass("hidden");
+        $(".menu-links").toggleClass("hidden-mobile");
         $("main").toggleClass("extended");
     });
 }
