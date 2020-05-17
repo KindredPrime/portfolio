@@ -147,6 +147,7 @@ function handleMenuChanges() {
     $(".burger").click(event => {
         $(".navbar").toggleClass("extended");
         $(".menu-links").toggleClass("hidden");
+        $("main").toggleClass("extended");
     });
 }
 

@@ -231,7 +231,7 @@ div p {
         height: 75px;
     }
 
-    .extended {
+    .navbar.extended {
         height: 100px;
     }
 
@@ -248,9 +248,13 @@ div p {
     }
     
     main {
-        margin-top: 120px;
+        margin-top: 95px;
         margin-right: 30px;
         margin-left: 30px;
+    }
+    
+    main.extended {
+        margin-top: 120px;
     }
 
     .headshot-photo {
