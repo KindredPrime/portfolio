@@ -143,7 +143,15 @@ function handlePhotoTransitions() {
     handlePrevImage();
 }
 
+function handleMenuChanges() {
+    $(".burger").click(event => {
+        $(".navbar").toggleClass("extended");
+        $(".menu-links").toggleClass("hidden");
+    });
+}
+
 $(function() {
     initializeIds();
     handlePhotoTransitions();
+    handleMenuChanges();
 });

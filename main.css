@@ -40,12 +40,10 @@ div p {
 
 .navbar {
     background-color: black;
-    color: white;
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100px;
     z-index: 1;
     border-bottom: 1px solid #A1A1A1;
 }
@@ -61,6 +59,13 @@ div p {
 .burger {
     right: 30px;
     top: 15px;
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    color: #00FFFF;
+    border: none;
 }
 
 .home-link, .menu-links * {
@@ -219,10 +224,19 @@ div p {
     .navbar {
         padding-left: 30px;
         padding-right: 30px;
+        height: 75px;
+    }
+
+    .extended {
+        height: 100px;
     }
 
     .home-link {
         left: 30px;
+    }
+
+    .hidden {
+        display: none;
     }
 
     .portfolio-link, .email-link-with-image, .linkedin-link, .github-link {
@@ -314,6 +328,7 @@ div p {
     .navbar {
         padding-left: 10%;
         padding-right: 10%;
+        height: 100px;
     }
 
     .home-link {
@@ -410,6 +425,7 @@ div p {
     .navbar {
         padding-left: 12%;
         padding-right: 12%;
+        height: 100px;
     }
 
     .home-link {
