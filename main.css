@@ -95,6 +95,10 @@ div p {
     background-color: white;
 }
 
+.hidden {
+    display: none;
+}
+
 .headline-text {
     margin-bottom: 15px;
     margin-left: 0px;
@@ -233,10 +237,6 @@ div p {
 
     .home-link {
         left: 30px;
-    }
-
-    .hidden {
-        display: none;
     }
 
     .portfolio-link, .email-link-with-image, .linkedin-link, .github-link {

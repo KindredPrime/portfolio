@@ -150,8 +150,52 @@ function handleMenuChanges() {
     });
 }
 
+/*
+    Handles switching between layouts
+*/
+function handleLayoutChanges() {
+    /*
+        Replaces the main content of the page with the provided layout
+    */
+    function loadLayout(layout) {
+        let desiredLayout = $(`section.${layout}`);
+        let layouts = desiredLayout.siblings("section");
+        layouts.addClass("hidden");
+        desiredLayout.removeClass("hidden");
+    }
+
+    /*
+        Handles switching to the homepage layout
+    */
+    function handleSwitchToHomepageLayout() {
+        $(".home-link").click(event => {
+            event.preventDefault();
+            loadLayout("homepage");
+        });
+    }
+
+    /*
+        Handles switching to the portfolio layout
+    */
+    function handleSwitchToPortfolioLayout() {
+        $(".portfolio-link").click(event => {
+            event.preventDefault();
+            loadLayout("portfolio");
+        });
+
+        $(".portfolio-button").click(event => {
+            event.preventDefault();
+            loadLayout("portfolio");
+        });
+    }
+
+    handleSwitchToHomepageLayout();
+    handleSwitchToPortfolioLayout();
+}
+
 $(function() {
     initializeIds();
     handlePhotoTransitions();
     handleMenuChanges();
+    handleLayoutChanges();
 });
