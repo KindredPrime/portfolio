@@ -124,10 +124,6 @@ button.menu {
     height: 30px;
 }
 
-.email-icon, .github-logo {
-    background-color: white;
-}
-
 .hidden {
     display: none;
 }
@@ -227,8 +223,6 @@ main.portfolio-button {
 }
 
 .html-logo, .css-logo {
-    background-color: white;
-
     /*
         These apply to alt text when the image doesn't load
     */
