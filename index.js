@@ -51,6 +51,25 @@ function handlePhotoTransitions() {
     }
 
     /*
+        Returns true if the currently-displayed photo is the first photo in 
+        its project photo slideshow
+    */
+    function onFirstPhoto(projectID) {
+        let currentProject = 
+            $(`section.project[data-project-id="${projectID}"]`);
+        let currentPhoto = currentProject
+            .find(`.project-photo.js-current-photo`);
+
+        let prevPhoto = currentPhoto.prev(".project-photo");
+        if(prevPhoto.length === 0) { //i.e. there aren't any previous photos
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /*
         Hides from the page the currently displayed photo, in the project with 
         the provided projectID
     */
@@ -83,6 +102,29 @@ function handlePhotoTransitions() {
     }
 
     /*
+        Shows/Hides the arrow buttons based on which photo in the slideshow is currently being displayed
+    */
+    function updateButtonsDisplayed(projectID) {
+        const currentProject = 
+            $(`section.project[data-project-id="${projectID}"]`);
+        const leftArrow = currentProject.find(".left-arrow-button");
+        const rightArrow = currentProject.find(".right-arrow-button");
+
+        if(onLastPhoto(projectID)) {
+            leftArrow.show();
+            rightArrow.hide();
+        }
+        else if(onFirstPhoto(projectID)) {
+            leftArrow.hide();
+            rightArrow.show();
+        }
+        else { //On some photo in the middle
+            leftArrow.show();
+            rightArrow.show();
+        }
+    }
+
+    /*
         Handles switching to the next photo when the right arrow button is 
         clicked
     */
@@ -94,34 +136,14 @@ function handlePhotoTransitions() {
                 .parents(".project-slideshow")
                 .find(".project-photo.js-current-photo");
 
-            let notOnLastPhoto = !onLastPhoto(projectID);
-            if(notOnLastPhoto) {
-                hideCurrentProjectPhoto(projectID);
+            hideCurrentProjectPhoto(projectID);
 
-                let nextPhotoID = currentPhoto.next(".project-photo")
-                    .data("photo-id");
-                showProjectPhoto(projectID, nextPhotoID);
-            }
+            let nextPhotoID = currentPhoto.next(".project-photo")
+                .data("photo-id");
+            showProjectPhoto(projectID, nextPhotoID);
+
+            updateButtonsDisplayed(projectID);
         });
-    }
-
-    /*
-        Returns true if the currently-displayed photo is the first photo in 
-        its project photo slideshow
-    */
-    function onFirstPhoto(projectID) {
-        let currentProject = 
-            $(`section.project[data-project-id="${projectID}"]`);
-        let currentPhoto = currentProject
-            .find(`.project-photo.js-current-photo`);
-
-        let prevPhoto = currentPhoto.prev(".project-photo");
-        if(prevPhoto.length === 0) { //i.e. there aren't any previous photos
-            return true;
-        }
-        else {
-            return false;
-        }
     }
 
     /*
@@ -136,14 +158,13 @@ function handlePhotoTransitions() {
                 .parents(".project-slideshow")
                 .find(".project-photo.js-current-photo");
 
-            let notOnFirstPhoto = !onFirstPhoto(projectID);
-            if(notOnFirstPhoto) {
-                hideCurrentProjectPhoto(projectID);
+            hideCurrentProjectPhoto(projectID);
 
-                let prevPhotoID = currentPhoto.prev(".project-photo")
-                    .data("photo-id");
-                showProjectPhoto(projectID, prevPhotoID);
-            }
+            let prevPhotoID = currentPhoto.prev(".project-photo")
+                .data("photo-id");
+            showProjectPhoto(projectID, prevPhotoID);
+
+            updateButtonsDisplayed(projectID);
         });
     }
     
