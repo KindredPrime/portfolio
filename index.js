@@ -97,7 +97,13 @@ function handlePhotoTransitions() {
         */
         if(photoToShow.length > 0) {
             photoToShow.addClass("js-current-photo");
-            photoToShow.show("fade", "linear", 600);
+
+            const slideshowButtons = project.find(".slideshow-button");
+            // Disable the buttons until after the animation finishes
+            slideshowButtons.prop("disabled", true);
+            photoToShow.show("fade", "linear", 600, () => {
+                slideshowButtons.prop("disabled", false);
+            });
         }
     }
 

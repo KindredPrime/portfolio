@@ -190,7 +190,7 @@ main.portfolio-button {
     display: block;
 }
 
-.left-arrow-button, .right-arrow-button {
+.slideshow-button {
     position: absolute;
     padding: 0px;
     background-color: transparent;
@@ -203,13 +203,16 @@ main.portfolio-button {
     width: 100%;
 }
 
-.left-arrow-button:focus, .left-arrow-button:hover, .right-arrow-button:focus, 
-    .right-arrow-button:hover {
+.slideshow-button:focus, .slideshow-button:hover {
     opacity: 1.0;
 }
 
-.left-arrow-button:hover, .right-arrow-button:hover {
+.slideshow-button:hover {
     cursor: pointer;
+}
+
+.slideshow-button:disabled {
+    opacity: 0.5;
 }
 
 .project-title {
@@ -322,7 +325,7 @@ main.portfolio-button {
         width: 90%;
     }
 
-    .left-arrow-button, .right-arrow-button {
+    .slideshow-button {
         top: 50%;
         width: 50px;
         height: 50px;
@@ -435,7 +438,7 @@ main.portfolio-button {
         width: 90%;
     }
 
-    .left-arrow-button, .right-arrow-button {
+    .slideshow-button {
         top: 50%;
         width: 75px;
         height: 75px;
@@ -544,7 +547,7 @@ main.portfolio-button {
         width: 800px;
     }
 
-    .left-arrow-button, .right-arrow-button {
+    .slideshow-button {
         top: 50%;
         width: 100px;
         height: 100px;
