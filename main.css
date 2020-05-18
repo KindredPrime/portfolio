@@ -257,7 +257,7 @@ main.portfolio-button {
 /*
     Mobile devices
 */
-@media screen and (max-width: 649px) {
+@media screen and (min-width: 0px) {
     h1 {
         font-size: 36px;
     }
@@ -280,7 +280,7 @@ main.portfolio-button {
         left: 30px;
     }
 
-    .hidden-mobile {
+    .hidden-on-mobile {
         display: none;
     }
 
@@ -392,6 +392,14 @@ main.portfolio-button {
         display: none;
     }
 
+    .hidden-on-mobile {
+        display: flex;
+    }
+
+    .email-link-with-text {
+        display: inline-block;
+    }
+
     .email-link-with-text, .linkedin-link, .github-link {
         margin-left: 4%;
     }
@@ -491,6 +499,14 @@ main.portfolio-button {
     
     button.menu {
         display: none;
+    }
+
+    .hidden-on-mobile {
+        display: flex;
+    }
+
+    .email-link-with-text {
+        display: inline-block;
     }
 
     .email-link-with-text, .linkedin-link, .github-link {
