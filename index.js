@@ -1,3 +1,5 @@
+"use strict";
+
 /*
     Assigns IDs to elements in the page for later use by jQuery
 */
@@ -6,8 +8,8 @@ function assignIDs() {
         Assigns a unique ID to each project on the page
     */
     function assignProjectIDs() {
-        let projects = $("section.project");
-        for(project of projects) {
+        const projects = $("section.project");
+        for(let project of projects) {
             $(project).attr("data-project-id", cuid());
         }
     }
@@ -16,8 +18,8 @@ function assignIDs() {
         Assigns a unique ID to each project photo on the page
     */
     function assignProjectPhotoIDs() {
-        let photos = $(".project-photo");
-        for(photo of photos) {
+        const photos = $(".project-photo");
+        for(let photo of photos) {
             $(photo).attr("data-photo-id", cuid());
         }
     }
@@ -36,12 +38,12 @@ function handlePhotoTransitions() {
         project photo slideshow
     */
     function onLastPhoto(projectID) {
-        let currentProject = 
+        const currentProject = 
             $(`section.project[data-project-id="${projectID}"]`);
-        let currentPhoto = 
+        const currentPhoto = 
             currentProject.find(`.project-photo.js-current-photo`);
 
-        let nextPhoto = currentPhoto.next(".project-photo");
+        const nextPhoto = currentPhoto.next(".project-photo");
         if(nextPhoto.length === 0) { //i.e. there aren't any next photos
             return true;
         }
@@ -55,12 +57,12 @@ function handlePhotoTransitions() {
         its project photo slideshow
     */
     function onFirstPhoto(projectID) {
-        let currentProject = 
+        const currentProject = 
             $(`section.project[data-project-id="${projectID}"]`);
-        let currentPhoto = currentProject
+        const currentPhoto = currentProject
             .find(`.project-photo.js-current-photo`);
 
-        let prevPhoto = currentPhoto.prev(".project-photo");
+        const prevPhoto = currentPhoto.prev(".project-photo");
         if(prevPhoto.length === 0) { //i.e. there aren't any previous photos
             return true;
         }
@@ -74,9 +76,9 @@ function handlePhotoTransitions() {
         the provided projectID
     */
     function hideCurrentProjectPhoto(projectID) {
-        let currentProject = 
+        const currentProject = 
             $(`section.project[data-project-id="${projectID}"]`);
-        let currentPhoto = 
+        const currentPhoto = 
             currentProject.find(`.project-photo.js-current-photo`);
 
         currentPhoto.removeClass("js-current-photo");
@@ -88,8 +90,8 @@ function handlePhotoTransitions() {
         project with the provided projectID
     */
     function showProjectPhoto(projectID, photoID) {
-        let project = $(`section.project[data-project-id="${projectID}"]`);
-        let photoToShow = project
+        const project = $(`section.project[data-project-id="${projectID}"]`);
+        const photoToShow = project
             .find(`.project-photo[data-photo-id="${photoID}"]`);
 
         /* 
@@ -136,15 +138,15 @@ function handlePhotoTransitions() {
     */
     function handleNextPhoto() {
         $(".right-arrow-button").click(event => {
-            let projectID = $(event.currentTarget).parents("section.project")
+            const projectID = $(event.currentTarget).parents("section.project")
                 .data("project-id");
-            let currentPhoto = $(event.currentTarget)
+            const currentPhoto = $(event.currentTarget)
                 .parents(".project-slideshow")
                 .find(".project-photo.js-current-photo");
 
             hideCurrentProjectPhoto(projectID);
 
-            let nextPhotoID = currentPhoto.next(".project-photo")
+            const nextPhotoID = currentPhoto.next(".project-photo")
                 .data("photo-id");
             showProjectPhoto(projectID, nextPhotoID);
 
@@ -158,15 +160,15 @@ function handlePhotoTransitions() {
     */
     function handlePrevPhoto() {
         $(".left-arrow-button").click(event => {
-            let projectID = $(event.currentTarget).parents("section.project")
+            const projectID = $(event.currentTarget).parents("section.project")
                 .data("project-id");
-            let currentPhoto = $(event.currentTarget)
+            const currentPhoto = $(event.currentTarget)
                 .parents(".project-slideshow")
                 .find(".project-photo.js-current-photo");
 
             hideCurrentProjectPhoto(projectID);
 
-            let prevPhotoID = currentPhoto.prev(".project-photo")
+            const prevPhotoID = currentPhoto.prev(".project-photo")
                 .data("photo-id");
             showProjectPhoto(projectID, prevPhotoID);
 
@@ -197,8 +199,8 @@ function handleLayoutChanges() {
         Replaces the main content of the page with the provided layout
     */
     function loadLayout(layout) {
-        let desiredLayout = $(`section.${layout}`);
-        let layouts = desiredLayout.siblings("section");
+        const desiredLayout = $(`section.${layout}`);
+        const layouts = desiredLayout.siblings("section");
         layouts.addClass("hidden");
         desiredLayout.removeClass("hidden");
     }
