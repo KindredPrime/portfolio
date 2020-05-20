@@ -146,15 +146,6 @@ main.portfolio-button {
     display: block;
 }
 
-.headshot-placeholder {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: -9px;
-    color: black;
-}
-
 .bio-header {
     margin-bottom: 10px;
     margin-top: 30px;
@@ -415,12 +406,19 @@ main.portfolio-button {
         margin-left: 10%;
     }
 
+    .bio-header {
+        position: relative;
+        display: inline-block;
+        margin-left: -150px;
+        left: 50%;
+    }
+
     .headshot-photo {
         float: right;
         width: 30%;
         margin-left: 20px;
         margin-right: 10px;
-        margin-top: 62px;
+        margin-top: 92px;
         margin-bottom: 5px;
     }
     
@@ -523,12 +521,19 @@ main.portfolio-button {
         margin-right: 12%;
     }
 
+    .bio-header {
+        position: relative;
+        display: inline-block;
+        margin-left: -150px;
+        left: 50%;
+    }
+
     .headshot-photo {
         float: right;
         width: 25%;
         margin-left: 20px;
         margin-right: 10px;
-        margin-top: 68px;
+        margin-top: 93px;
         margin-bottom: 10px;
         max-width: 250px;
     }
