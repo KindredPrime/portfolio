@@ -110,7 +110,8 @@ function handlePhotoTransitions() {
     }
 
     /*
-        Shows/Hides the arrow buttons based on which photo in the slideshow is currently being displayed
+        Shows/Hides the arrow buttons based on which photo in the slideshow is 
+        currently being displayed
     */
     function updateButtonsDisplayed(projectID) {
         const currentProject = 
