@@ -28,6 +28,13 @@ function assignIDs() {
     assignProjectPhotoIDs();
 }
 
+/**
+ * Hide all photos except for one from each project
+ */
+function hideProjectPhotos() {
+    $(".project-photo").not(".project-photo.current").hide();
+}
+
 /*
     Handles switching between photos in the photo slideshows for projects in 
     the portfolio
@@ -41,7 +48,7 @@ function handlePhotoTransitions() {
         const currentProject = 
             $(`section.project[data-project-id="${projectID}"]`);
         const currentPhoto = 
-            currentProject.find(`.project-photo.js-current-photo`);
+            currentProject.find(`.project-photo.current`);
 
         const nextPhoto = currentPhoto.next(".project-photo");
         if(nextPhoto.length === 0) { //i.e. there aren't any next photos
@@ -60,7 +67,7 @@ function handlePhotoTransitions() {
         const currentProject = 
             $(`section.project[data-project-id="${projectID}"]`);
         const currentPhoto = currentProject
-            .find(`.project-photo.js-current-photo`);
+            .find(`.project-photo.current`);
 
         const prevPhoto = currentPhoto.prev(".project-photo");
         if(prevPhoto.length === 0) { //i.e. there aren't any previous photos
@@ -79,9 +86,9 @@ function handlePhotoTransitions() {
         const currentProject = 
             $(`section.project[data-project-id="${projectID}"]`);
         const currentPhoto = 
-            currentProject.find(`.project-photo.js-current-photo`);
+            currentProject.find(`.project-photo.current`);
 
-        currentPhoto.removeClass("js-current-photo");
+        currentPhoto.removeClass("current");
         currentPhoto.hide();
     }
 
@@ -98,14 +105,25 @@ function handlePhotoTransitions() {
             Checks if there are photos with that ID to show
         */
         if(photoToShow.length > 0) {
-            photoToShow.addClass("js-current-photo");
+            photoToShow.addClass("current");
 
+            photoToShow.show();
+
+            /**
+             * When this section is enabled, and the user is using Firefox as
+             * their browser, the page automatically scrolls to the top of the
+             * newly-displayed photo.
+             */
+            /*
             const slideshowButtons = project.find(".slideshow-button");
+
             // Disable the buttons until after the animation finishes
             slideshowButtons.prop("disabled", true);
+
             photoToShow.show("fade", "linear", 600, () => {
                 slideshowButtons.prop("disabled", false);
             });
+            */
         }
     }
 
@@ -134,51 +152,36 @@ function handlePhotoTransitions() {
     }
 
     /*
-        Handles switching to the next photo when the right arrow button is 
-        clicked
+        Handle switching to another photo when the slideshow button is clicked
     */
-    function handleNextPhoto() {
-        $(".right-arrow-button").click(event => {
+    function handleArrowButtonClick() {
+        $(".slideshow-button").click((event) => {
             const projectID = $(event.currentTarget).parents("section.project")
                 .data("project-id");
             const currentPhoto = $(event.currentTarget)
                 .parents(".project-slideshow")
-                .find(".project-photo.js-current-photo");
+                .find(".project-photo.current");
 
             hideCurrentProjectPhoto(projectID);
 
-            const nextPhotoID = currentPhoto.next(".project-photo")
-                .data("photo-id");
-            showProjectPhoto(projectID, nextPhotoID);
+            let photoIDToChangeTo;
+            if ($(event.currentTarget).hasClass("right-arrow-button")) {
+                // Change to the next photo
+                photoIDToChangeTo = currentPhoto.next(".project-photo")
+                    .data("photo-id");
+            } else if ($(event.currentTarget).hasClass("left-arrow-button")) {
+                // Change to the previous photo
+                photoIDToChangeTo = currentPhoto.prev(".project-photo")
+                    .data("photo-id");
+            }
 
-            updateButtonsDisplayed(projectID);
-        });
-    }
-
-    /*
-        Handles switching to the previous photo when the left arrow button is
-        clicked
-    */
-    function handlePrevPhoto() {
-        $(".left-arrow-button").click(event => {
-            const projectID = $(event.currentTarget).parents("section.project")
-                .data("project-id");
-            const currentPhoto = $(event.currentTarget)
-                .parents(".project-slideshow")
-                .find(".project-photo.js-current-photo");
-
-            hideCurrentProjectPhoto(projectID);
-
-            const prevPhotoID = currentPhoto.prev(".project-photo")
-                .data("photo-id");
-            showProjectPhoto(projectID, prevPhotoID);
+            showProjectPhoto(projectID, photoIDToChangeTo);
 
             updateButtonsDisplayed(projectID);
         });
     }
     
-    handleNextPhoto();
-    handlePrevPhoto();
+    handleArrowButtonClick();
 }
 
 /*
@@ -232,6 +235,7 @@ function handleLayoutChanges() {
 
 $(function() {
     assignIDs();
+    hideProjectPhotos();
     handlePhotoTransitions();
     handleMenuChanges();
     handleLayoutChanges();

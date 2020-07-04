@@ -174,13 +174,9 @@ main.portfolio-button {
 }
 
 .project-photo {
-    display: none;
+    display: block;
     width: 100%;
     border: 2px solid #A1A1A1;
-}
-
-.default-photo {
-    display: block;
 }
 
 .slideshow-button {
@@ -551,7 +547,7 @@ main.portfolio-button {
     }
 
     .project-slideshow {
-        width: 800px;
+        width: 700px;
     }
 
     .slideshow-button {
