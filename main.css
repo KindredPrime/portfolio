@@ -159,6 +159,11 @@ main.portfolio-button {
     text-align: center;
 }
 
+.project {
+    border-bottom: 5px solid black;
+    margin-bottom: 30px;
+}
+
 .project-slideshow, .project-photos {
     position: relative;
 }
@@ -171,6 +176,7 @@ main.portfolio-button {
 .project-photo {
     display: none;
     width: 100%;
+    border: 2px solid #A1A1A1;
 }
 
 .default-photo {
@@ -228,6 +234,7 @@ main.portfolio-button {
 .project-links {
     text-align: center;
     margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 .project-repo-link, .project-live-link {
@@ -339,6 +346,11 @@ main.portfolio-button {
         max-width: 48px;
     }
 
+    .javascript-logo {
+        width: 17%;
+        max-width: 60px;
+    }
+
     .jquery-logo {
         width: 19%;
         max-width: 67px;
@@ -347,10 +359,6 @@ main.portfolio-button {
     .git-logo, .project-technologies .github-logo {
         width: 17%;
         max-width: 74px;
-    }
-
-    .project-links {
-        margin-bottom: 25px;
     }
 }
 
@@ -457,16 +465,16 @@ main.portfolio-button {
         width: 63px;
     }
 
+    .javascript-logo {
+        width: 100%;
+    }
+
     .jquery-logo {
         width: 67px;
     }
 
     .git-logo, .project-technologies .github-logo {
         width: 74px;
-    }
-
-    .project-links {
-        margin-bottom: 25px;
     }
 }
 
@@ -573,15 +581,15 @@ main.portfolio-button {
         width: 63px;
     }
 
+    .javascript-logo {
+        width: 100%;
+    }
+
     .jquery-logo {
         width: 67px;
     }
 
     .git-logo, .project-technologies .github-logo {
         width: 74px;
-    }
-
-    .project-links {
-        margin-bottom: 45px;
     }
 }
