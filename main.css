@@ -127,7 +127,18 @@ button.menu {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 100%;
+}
+
+.menu-links * {
+  display: inline-block;
+}
+
+.email-image-link, .linkedin-link, .github-link {
+  margin-left: 7%;
+}
+
+.email-text-link {
+  display: none;
 }
 
 .email-icon, .linkedin-icon {
@@ -145,9 +156,11 @@ button.menu {
 }
 
 main {
-  margin-bottom: 40px;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin: 95px 10% 40px 10%;
+}
+
+main.extended {
+  margin-top: 120px;
 }
 
 .headline-text {
@@ -161,10 +174,15 @@ main.portfolio-button {
 
 .headshot-photo {
   border: 1px solid #A1A1A1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 165px;
   display: block;
 }
 
 .bio-header {
+  text-align: center;
   margin-bottom: 10px;
   margin-top: 30px;
 }
@@ -175,6 +193,7 @@ main.portfolio-button {
 
 .page-title {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .project {
@@ -187,6 +206,7 @@ main.portfolio-button {
 }
 
 .project-slideshow {
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -199,6 +219,10 @@ main.portfolio-button {
 
 .slideshow-button {
   position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
   padding: 0px;
   background-color: transparent;
   border: none;
@@ -220,6 +244,14 @@ main.portfolio-button {
 
 .slideshow-button:disabled {
   opacity: 0.5;
+}
+
+.left-arrow-button {
+  left: 10px;
+}
+
+.right-arrow-button {
+  right: 10px;
 }
 
 .project-title {
@@ -312,66 +344,6 @@ main .github-logo {
 }
 
 /*
-  Mobile devices
-*/
-@media screen and (min-width: 0px) {
-  .hidden-on-mobile {
-    display: none;
-  }
-
-  .email-link-with-image, .linkedin-link, .github-link {
-    margin-left: 7%;
-  }
-
-  .email-link-with-text {
-    display: none;
-  }
-
-  main {
-    margin-top: 95px;
-  }
-
-  main.extended {
-    margin-top: 120px;
-  }
-
-  .bio-header {
-    text-align: center;
-  }
-
-  .headshot-photo {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-    width: 65%;
-    max-width: 250px;
-  }
-
-  .page-title {
-    margin-bottom: 30px;
-  }
-
-  .project-slideshow {
-    width: 90%;
-  }
-
-  .slideshow-button {
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    margin-top: -25px;
-  }
-
-  .left-arrow-button {
-    left: 10px;
-  }
-
-  .right-arrow-button {
-    right: 10px;
-  }
-}
-
-/*
   Tablet devices
 */
 @media screen and (min-width: 690px) {
@@ -401,19 +373,19 @@ main .github-logo {
     display: flex;
   }
 
-  .email-link-with-text {
+  .email-text-link {
     display: inline-block;
   }
 
-  .email-link-with-text, .linkedin-link, .github-link {
+  .email-text-link, .linkedin-link, .github-link {
     margin-left: 4%;
   }
 
-  .email-link-with-image {
+  .email-image-link {
     display: none;
   }
 
-  .email-link-with-text:focus, .email-link-with-text:hover {
+  .email-text-link:focus, .email-text-link:hover {
     transform: scale(1.1);
   }
 
@@ -501,19 +473,19 @@ main .github-logo {
     display: flex;
   }
 
-  .email-link-with-text {
+  .email-text-link {
     display: inline-block;
   }
 
-  .email-link-with-text, .linkedin-link, .github-link {
+  .email-text-link, .linkedin-link, .github-link {
     margin-left: 40px;
   }
 
-  .email-link-with-image {
+  .email-image-link {
     display: none;
   }
 
-  .email-link-with-text:focus, .email-link-with-text:hover {
+  .email-text-link:focus, .email-text-link:hover {
     transform: scale(1.2);
   }
 
