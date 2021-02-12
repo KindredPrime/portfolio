@@ -297,14 +297,6 @@ main.portfolio-button {
   width: 50px;
 }
 
-.git-logo {
-  width: 60px;
-}
-
-main .github-logo {
-  width: 70px;
-}
-
 .react-logo {
   width: 60px;
 }
@@ -321,7 +313,7 @@ main .github-logo {
   padding: 3px;
 }
 
-.jquery-logo, .react-logo, .node-logo, .postgresql-logo, .git-logo, .github-logo {
+.jquery-logo, .react-logo, .node-logo, .postgresql-logo {
   margin-top: 15px;
 }
 
@@ -379,16 +371,16 @@ main .github-logo {
     justify-content: flex-end;
   }
 
+  .email-image-link {
+    display: none;
+  }
+
   .email-text-link {
     display: inline-block;
   }
 
   .email-text-link, .linkedin-link, .github-link {
     margin-left: 4%;
-  }
-
-  .email-image-link {
-    display: none;
   }
 
   .email-text-link:focus, .email-text-link:hover {
@@ -444,7 +436,7 @@ main .github-logo {
     width: 70px;
   }
 
-  .jquery-logo, .react-logo, .node-logo, .postgresql-logo, .git-logo, .github-logo {
+  .jquery-logo, .react-logo, .node-logo, .postgresql-logo {
     margin-top: 0px;
   }
 }
