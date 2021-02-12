@@ -124,6 +124,10 @@ button.menu {
 .menu-links {
   position: relative;
   top: 57px;
+  display: none;
+}
+
+.menu-links.extended {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -369,8 +373,10 @@ main .github-logo {
     display: none;
   }
 
-  .hidden-on-mobile {
+  .menu-links {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .email-text-link {
@@ -463,10 +469,6 @@ main .github-logo {
 
   .home-button {
     left: 12%;
-  }
-
-  button.menu {
-    display: none;
   }
 
   .hidden-on-mobile {

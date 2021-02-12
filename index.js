@@ -174,7 +174,7 @@ function handlePhotoTransitions() {
 function handleMenuChanges() {
   $("button.menu").click(event => {
     $(".navbar").toggleClass("extended");
-    $(".menu-links").toggleClass("hidden");
+    $(".menu-links").toggleClass("extended");
     $("main").toggleClass("extended");
   });
 }
