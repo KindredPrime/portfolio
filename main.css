@@ -99,6 +99,9 @@ div p {
   font-size: 16px;
 }
 
+/*
+  Hides content from users, without hiding it from screen readers
+*/
 .visually-hidden {
   height: 1px;
   margin: -1px;
@@ -155,6 +158,9 @@ button.menu {
   height: 30px;
 }
 
+/*
+  Hides content from users and screen readers
+*/
 .hidden {
   display: none;
 }
