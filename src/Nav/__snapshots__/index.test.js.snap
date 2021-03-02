@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav Component displays the menu links when the menu button is clicked 1`] = `
+<body>
+  <div>
+    <nav
+      class="Nav expanded"
+    >
+      <a
+        aria-current="page"
+        class="Nav__home active"
+        href="/"
+      >
+        Ken Wright
+        <span
+          class="visually-hidden"
+        >
+          Change layout to homepage
+        </span>
+      </a>
+      <button
+        class="Nav__menu"
+      >
+        ☰
+        <span
+          class="visually-hidden"
+        >
+          Show/Hide menu links
+        </span>
+      </button>
+      <div
+        class="Nav__menu-links expanded"
+      >
+        <a
+          href="/projects"
+        >
+          Projects
+        </a>
+        <a
+          class="email-image-link"
+          href="mailto:kenneth.gordon.wright@gmail.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Email"
+            class="email-icon"
+            src="email-icon.png"
+          />
+        </a>
+        <a
+          class="email-text-link"
+          href="mailto:kenneth.gordon.wright@gmail.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          kenneth.gordon.wright@gmail.com
+        </a>
+        <a
+          class="linkedin-link"
+          href="https://www.linkedin.com/in/ken-wright-52554556/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="LinkedIn"
+            class="linkedin-icon"
+            src="linkedin-logo.png"
+          />
+        </a>
+        <a
+          class="github-link"
+          href="https://github.com/KindredPrime"
+          rel="noreferrer"
+          target="_blank"
+        >
+          GitHub
+        </a>
+      </div>
+    </nav>
+  </div>
+</body>
+`;
