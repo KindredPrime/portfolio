@@ -1,3 +1,9 @@
+:root {
+  --main-bg-color: #5E3F09;
+  --emphasis-color: #00FFFF;
+  --border-color: #A1A1A1;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +11,7 @@
 body {
   margin: 0px;
   color: white;
-  background-color: #5E3F09;
+  background-color: var(--main-bg-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,8 +65,8 @@ main {
 
 .button-look-alike {
   color: black;
-  background-color: #00FFFF;
-  border: 2px outset #A1A1A1;
+  background-color: var(--emphasis-color);
+  border: 2px outset var(--border-color);
   border-radius: 5px;
   padding: 2px 8px;
   font-size: 18px;
@@ -68,7 +74,7 @@ main {
 }
 
 .button-look-alike:hover, .button-look-alike:focus {
-  color: #00FFFF;
+  color: var(--emphasis-color);
   background-color: black;
 }
 
