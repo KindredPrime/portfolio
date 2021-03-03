@@ -3,81 +3,124 @@
 exports[`Nav Component displays the menu links when the menu button is clicked 1`] = `
 <body>
   <div>
-    <nav
-      class="Nav expanded"
+    <div
+      class="App nav-expanded"
     >
-      <a
-        aria-current="page"
-        class="Nav__home active"
-        href="/"
-      >
-        Ken Wright
-        <span
-          class="visually-hidden"
-        >
-          Change layout to homepage
-        </span>
-      </a>
-      <button
-        class="Nav__menu"
-      >
-        ☰
-        <span
-          class="visually-hidden"
-        >
-          Show/Hide menu links
-        </span>
-      </button>
-      <div
-        class="Nav__menu-links expanded"
+      <nav
+        class="Nav expanded"
       >
         <a
+          aria-current="page"
+          class="Nav__home active"
+          href="/"
+        >
+          Ken Wright
+          <span
+            class="visually-hidden"
+          >
+            Change layout to homepage
+          </span>
+        </a>
+        <button
+          class="Nav__menu"
+        >
+          ☰
+          <span
+            class="visually-hidden"
+          >
+            Show/Hide menu links
+          </span>
+        </button>
+        <div
+          class="Nav__menu-links expanded"
+        >
+          <a
+            href="/projects"
+          >
+            Projects
+          </a>
+          <a
+            class="email-image-link"
+            href="mailto:kenneth.gordon.wright@gmail.com"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Email"
+              class="email-icon"
+              src="email-icon.png"
+            />
+          </a>
+          <a
+            class="email-text-link"
+            href="mailto:kenneth.gordon.wright@gmail.com"
+            rel="noreferrer"
+            target="_blank"
+          >
+            kenneth.gordon.wright@gmail.com
+          </a>
+          <a
+            class="linkedin-link"
+            href="https://www.linkedin.com/in/ken-wright-52554556/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="LinkedIn"
+              class="linkedin-icon"
+              src="linkedin-logo.png"
+            />
+          </a>
+          <a
+            class="github-link"
+            href="https://github.com/KindredPrime"
+            rel="noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </div>
+      </nav>
+      <main
+        class="Home"
+      >
+        <p
+          class="Home__headline"
+        >
+          My name is Ken Wright and I enjoy writing code that manipulates data and data structures.
+        </p>
+        <a
+          class="button-look-alike"
           href="/projects"
         >
           Projects
         </a>
-        <a
-          class="email-image-link"
-          href="mailto:kenneth.gordon.wright@gmail.com"
-          rel="noreferrer"
-          target="_blank"
+        <section
+          class="bio"
         >
           <img
-            alt="Email"
-            class="email-icon"
-            src="email-icon.png"
+            alt="Headshot"
+            class="Home__headshot"
+            src="headshot-photo.jpg"
           />
-        </a>
-        <a
-          class="email-text-link"
-          href="mailto:kenneth.gordon.wright@gmail.com"
-          rel="noreferrer"
-          target="_blank"
-        >
-          kenneth.gordon.wright@gmail.com
-        </a>
-        <a
-          class="linkedin-link"
-          href="https://www.linkedin.com/in/ken-wright-52554556/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="LinkedIn"
-            class="linkedin-icon"
-            src="linkedin-logo.png"
-          />
-        </a>
-        <a
-          class="github-link"
-          href="https://github.com/KindredPrime"
-          rel="noreferrer"
-          target="_blank"
-        >
-          GitHub
-        </a>
-      </div>
-    </nav>
+          <h2
+            class="bio-header"
+          >
+            A little more about me
+          </h2>
+          <p
+            class="bio-text"
+          >
+            I love writing code.  It gives me an opportunity to flex my creativity muscles by writing code that is flexible, easy to understand, and easy to build on top of.  Writing code also gives me an opportunity to work with other programmers to come up with interesting solutions to complex problems. I mostly work with JavaScript, and I use Git to track changes.
+          </p>
+          <p
+            class="bio-text"
+          >
+            Outside of writing code, I enjoy: making sculptures of animals, walking in parks and on nature paths, playing video games, and volunteering for community organizations. And I enjoy finding new activities, interests, and hobbies.
+          </p>
+        </section>
+      </main>
+    </div>
   </div>
 </body>
 `;

@@ -14,6 +14,14 @@ body {
   background-color: var(--main-bg-color);
 }
 
+.App {
+  margin: 95px 10% 40px 10%;
+}
+
+.App.nav-expanded {
+  margin-top: 120px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Hind", sans-serif;
 }
@@ -59,10 +67,6 @@ a:focus, a:hover {
   font-weight: bold;
 }
 
-main {
-  margin: 95px 10% 40px 10%;
-}
-
 .button-look-alike {
   color: black;
   background-color: var(--emphasis-color);
@@ -98,7 +102,7 @@ main {
     line-height: 27px
   }
 
-  main {
+  .App {
     margin-top: 140px;
   }
 }
@@ -123,7 +127,7 @@ main {
     line-height: 30px
   }
 
-  main {
+  .App {
     margin-left: 12%;
     margin-right: 12%;
   }
