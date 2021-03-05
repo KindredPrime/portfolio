@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Nav from './Nav';
-import Home from './Home';
+import Nav from './Nav/index';
+import Home from './Home/index';
+import ProjectsPage from './ProjectsPage/index'
 import './App.css';
 
 class App extends React.Component {
@@ -27,6 +28,10 @@ class App extends React.Component {
 
         <Route exact path="/">
           <Home />
+        </Route>
+
+        <Route path="/projects">
+          <ProjectsPage />
         </Route>
       </div>
     );

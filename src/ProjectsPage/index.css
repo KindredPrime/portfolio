@@ -1,0 +1,4 @@
+.ProjectsPage__Project:not(:last-child) {
+  border-bottom: 5px solid black;
+  margin-bottom: 30px;
+}
