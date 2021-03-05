@@ -10,7 +10,7 @@ describe('Project Component', () => {
         title=""
         techLogos={[]}
         description=""
-        githubLink=""
+        repoLink=""
         liveLink=""
       />,
       div

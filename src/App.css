@@ -64,11 +64,13 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--emphasis-color);
   font-size: 16px;
 }
 
 a:focus, a:hover {
   font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .button-look-alike {

@@ -105,7 +105,7 @@ const projectDetails = [
       this app, it can be added with its name, contact information,
       description, and the cause(s) it supports.
     `,
-    githubLink: 'https://github.com/KindredPrime/volunteer-finder',
+    repoLink: 'https://github.com/KindredPrime/volunteer-finder',
     liveLink: 'https://volunteer-finder.vercel.app/'
   },
   {
@@ -147,7 +147,7 @@ const projectDetails = [
       includes pictures of the organism, a brief exerpt from the Wikipedia page
       about the organism, and a link to the Wikipedia page.
     `,
-    githubLink: 'https://github.com/KindredPrime/explore-wildlife',
+    repoLink: 'https://github.com/KindredPrime/explore-wildlife',
     liveLink: 'https://kindredprime.github.io/explore-wildlife/'
   }
 ];

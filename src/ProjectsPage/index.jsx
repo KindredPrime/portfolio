@@ -15,7 +15,7 @@ function ProjectsPage() {
           techLogos,
           screenshots,
           description,
-          githubLink,
+          repoLink,
           liveLink
         } = projectDetails;
 
@@ -26,7 +26,7 @@ function ProjectsPage() {
             techLogos={techLogos}
             screenshots={screenshots}
             description={description}
-            githubLink={githubLink}
+            repoLink={repoLink}
             liveLink={liveLink}
           />
         );

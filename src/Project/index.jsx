@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import TechLogos from '../TechLogos/index';
+import ProjectLinks from '../ProjectLinks/index';
 import './index.css';
 
 function Project(props) {
@@ -8,7 +9,7 @@ function Project(props) {
     title,
     techLogos,
     description,
-    githubLink,
+    repoLink,
     liveLink
   } = props;
 
@@ -19,10 +20,7 @@ function Project(props) {
       <h2 className="Project__title">{title}</h2>
       <TechLogos logos={techLogos} />
       <p className="Project__description">{description}</p>
-      <div className="Project__links">
-        <a href={githubLink} target="_blank" rel="noreferrer">GitHub</a>
-        <a href={liveLink} target="_blank" rel="noreferrer">Demo</a>
-      </div>
+      <ProjectLinks repo={repoLink} live={liveLink} />
     </section>
   );
 }
@@ -44,7 +42,7 @@ Project.propTypes = {
     }
   )),
   description: PropTypes.string.isRequired,
-  githubLink: PropTypes.string.isRequired,
+  repoLink: PropTypes.string.isRequired,
   liveLink: PropTypes.string.isRequired
 };
 
