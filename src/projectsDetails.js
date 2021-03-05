@@ -30,37 +30,37 @@ const allTechLogos = {
     id: 1,
     src: htmlLogo,
     alt: 'HTML5',
-    classNames: 'html-logo'
+    classNames: 'TechLogos__html'
   },
   css: {
     id: 2,
     src: cssLogo,
     alt: 'CSS3',
-    classNames: 'css-logo'
+    classNames: 'TechLogos__css'
   },
   react: {
     id: 3,
     src: reactLogo,
     alt: 'React.js',
-    classNames: 'react-logo'
+    classNames: 'TechLogos__react'
   },
   node: {
     id: 4,
     src: nodeLogo,
     alt: 'Node.js',
-    classNames: 'node-logo'
+    classNames: 'TechLogos__node'
   },
   postgresql: {
     id: 5,
     src: postgresqlLogo,
     alt: 'PostgreSQL',
-    classNames: 'postgresql-logo'
+    classNames: 'TechLogos__postgresql'
   },
   jquery: {
     id: 6,
     src: jqueryLogo,
     alt: 'jQuery',
-    classNames: 'jquery-logo'
+    classNames: 'TechLogos__jquery'
   }
 }
 

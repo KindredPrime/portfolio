@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechLogos Component renders as expected 1`] = `
+<body>
+  <div>
+    <div
+      class="TechLogos"
+    >
+      <img
+        alt="Test alt"
+        class="Test class names"
+        src="homepage-mobile.png"
+      />
+    </div>
+  </div>
+</body>
+`;

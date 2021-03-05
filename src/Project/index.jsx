@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import TechLogos from '../TechLogos/index';
 import './index.css';
 
 function Project(props) {
@@ -16,17 +17,7 @@ function Project(props) {
       {screenshots.length > 0
         && <img src={screenshots[0].src} alt={screenshots[0].alt} />}
       <h2 className="Project__title">{title}</h2>
-      {techLogos.map((techLogo) => {
-        const {src, alt, classNames} = techLogo;
-        return (
-          <img
-            key={techLogo.id}
-            src={src}
-            alt={alt}
-            className={classNames}
-          />
-        );
-      })}
+      <TechLogos logos={techLogos} />
       <p className="Project__description">{description}</p>
       <div className="Project__links">
         <a href={githubLink} target="_blank" rel="noreferrer">GitHub</a>
