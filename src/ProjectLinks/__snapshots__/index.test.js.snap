@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectLinks Component renders content as expected 1`] = `
+<body>
+  <div>
+    <div
+      class="ProjectLinks"
+    >
+      <a
+        class="ProjectLinks__repo"
+        href="https://www.repo.com"
+        rel="noreferrer"
+        target="_blank"
+      >
+        GitHub
+      </a>
+      <span
+        class="ProjectLinks__divider"
+      >
+        |
+      </span>
+      <a
+        class="ProjectLinks__live"
+        href="https://www.live.com"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Live
+      </a>
+    </div>
+  </div>
+</body>
+`;
