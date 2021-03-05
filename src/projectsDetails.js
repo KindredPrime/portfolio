@@ -119,23 +119,23 @@ const projectDetails = [
     screenshots: [
       {
         src: exploreWildlifeAbout,
-        alt: 'About Explore Wildlife'
+        alt: 'About Explore Wildlife (desktop view)'
       },
       {
         src: exploreWildlifeAddressSearch,
-        alt: 'Explore Wildlife address search parameters'
+        alt: 'Explore Wildlife address search parameters (mobile view)'
       },
       {
         src: exploreWildlifeAddressResults,
-        alt: 'Explore Wildlife address search results'
+        alt: 'Explore Wildlife address search results (tablet view)'
       },
       {
         src: exploreWildlifeMainSearch,
-        alt: 'Explore Wildlife main search parameters'
+        alt: 'Explore Wildlife main search parameters (tablet view)'
       },
       {
         src: exploreWildlifeFinalResults,
-        slt: 'Explore Wildlife final search results'
+        alt: 'Explore Wildlife final search results (tablet view)'
       }
     ],
     description: `

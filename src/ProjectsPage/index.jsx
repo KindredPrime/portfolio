@@ -1,4 +1,5 @@
 import projectsDetails from '../projectsDetails';
+import Project from '../Project/index';
 import './index.css';
 
 function ProjectsPage() {
@@ -17,28 +18,17 @@ function ProjectsPage() {
           githubLink,
           liveLink
         } = projectDetails;
-        const screenshotSrc = screenshots[0].src;
-        const screenshotAlt = screenshots[0].alt;
 
         return (
-          <section key={`project-${projectDetails.id}`} className="ProjectsPage__Project">
-            <img src={screenshotSrc} alt={screenshotAlt} />
-            <p>{title}</p>
-            {techLogos.map((techLogo) => {
-              const {src, alt, classNames} = techLogo;
-              return (
-                <img
-                  key={techLogo.id}
-                  src={src}
-                  alt={alt}
-                  className={classNames}
-                />
-              );
-            })}
-            <p>{description}</p>
-            <p>{githubLink}</p>
-            <p>{liveLink}</p>
-          </section>
+          <Project
+            key={`project-${projectDetails.id}`}
+            title={title}
+            techLogos={techLogos}
+            screenshots={screenshots}
+            description={description}
+            githubLink={githubLink}
+            liveLink={liveLink}
+          />
         );
       })}
     </main>

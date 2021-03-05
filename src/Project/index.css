@@ -1,0 +1,12 @@
+.Project {
+  padding-bottom: 25px;
+}
+
+.Project__title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.Project__description {
+  margin-top: 15px;
+}
