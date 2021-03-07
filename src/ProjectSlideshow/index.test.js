@@ -2,9 +2,9 @@ import ReactDOM from 'react-dom';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import ProjectSlideshow from './index';
-import testFirst from './test-first.png';
-import testMiddle from './test-middle.png';
-import testLast from './test-last.png';
+import testFirst from '../images/test-first.png';
+import testMiddle from '../images/test-middle.png';
+import testLast from '../images/test-last.png';
 
 function renderNextImage(testScreenshots) {
   render(

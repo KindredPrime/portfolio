@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
-import volunteerFinderHomepage
-  from '../images/volunteer-finder/homepage-mobile.png';
+import testLogo from '../images/test-first.png';
 import TechLogos from './index';
 
 describe('TechLogos Component', () => {
@@ -28,7 +27,7 @@ describe('TechLogos Component', () => {
         logos={[
           {
             id: 1,
-            src: volunteerFinderHomepage,
+            src: testLogo,
             alt: 'Test alt',
             classNames: 'Test class names'
           }
