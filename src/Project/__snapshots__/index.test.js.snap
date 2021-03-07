@@ -6,6 +6,9 @@ exports[`Project Component renders content as expected 1`] = `
     <section
       class="Project"
     >
+      <div
+        class="ProjectSlideshow"
+      />
       <h2
         class="Project__title"
       >

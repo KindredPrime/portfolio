@@ -1,0 +1,70 @@
+.ProjectSlideshow {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ProjectSlideshow__screenshot {
+  border: 2px solid #A1A1A1;
+  width: 100%;
+}
+
+.ProjectSlideshow__button {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  opacity: 0.5;
+}
+
+.ProjectSlideshow__arrow {
+  width: 100%;
+}
+
+.ProjectSlideshow__button:focus, .ProjectSlideshow__button:hover {
+  opacity: 1.0;
+}
+
+.ProjectSlideshow__button:hover {
+  cursor: pointer;
+}
+
+.ProjectSlideshow__button.left {
+  left: 10px;
+}
+
+.ProjectSlideshow__button.right {
+  right: 10px;
+}
+
+/*
+  Tablet devices
+*/
+@media screen and (min-width: 690px) {
+  .ProjectSlideshow__button {
+    width: 75px;
+    height: 75px;
+    margin-top: -37px;
+  }
+}
+
+/*
+  Desktop/laptop computers
+*/
+@media screen and (min-width: 1000px) {
+  .ProjectSlideshow {
+    width: 700px;
+  }
+
+  .ProjectSlideshow__button {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+  }
+}

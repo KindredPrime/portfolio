@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectSlideshow Component renders the content as expected 1`] = `
+<body>
+  <div>
+    <div
+      class="ProjectSlideshow"
+    >
+      <img
+        alt="First test screenshot"
+        class="ProjectSlideshow__screenshot"
+        src="test-first.png"
+      />
+      <button
+        class="ProjectSlideshow__button right"
+        type="button"
+      >
+        <img
+          alt="next screenshot"
+          class="ProjectSlideshow__arrow"
+          src="right-arrow.png"
+        />
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ProjectSlideshow Component renders the next screenshot when the right arrow button is clicked 1`] = `
+<body>
+  <div>
+    <div
+      class="ProjectSlideshow"
+    >
+      <img
+        alt="Middle test screenshot"
+        class="ProjectSlideshow__screenshot"
+        src="test-middle.png"
+      />
+      <button
+        class="ProjectSlideshow__button left"
+        type="button"
+      >
+        <img
+          alt="previous screenshot"
+          class="ProjectSlideshow__arrow"
+          src="left-arrow.png"
+        />
+      </button>
+      <button
+        class="ProjectSlideshow__button right"
+        type="button"
+      >
+        <img
+          alt="next screenshot"
+          class="ProjectSlideshow__arrow"
+          src="right-arrow.png"
+        />
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ProjectSlideshow Component renders the previous screenshot when the left arrow button is clicked 1`] = `
+<body>
+  <div>
+    <div
+      class="ProjectSlideshow"
+    >
+      <img
+        alt="First test screenshot"
+        class="ProjectSlideshow__screenshot"
+        src="test-first.png"
+      />
+      <button
+        class="ProjectSlideshow__button right"
+        type="button"
+      >
+        <img
+          alt="next screenshot"
+          class="ProjectSlideshow__arrow"
+          src="right-arrow.png"
+        />
+      </button>
+    </div>
+  </div>
+</body>
+`;

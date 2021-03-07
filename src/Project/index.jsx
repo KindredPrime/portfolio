@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import ProjectSlideshow from '../ProjectSlideshow/index';
 import TechLogos from '../TechLogos/index';
 import ProjectLinks from '../ProjectLinks/index';
 import './index.css';
@@ -15,8 +16,7 @@ function Project(props) {
 
   return (
     <section className="Project">
-      {screenshots.length > 0
-        && <img src={screenshots[0].src} alt={screenshots[0].alt} />}
+      <ProjectSlideshow screenshots={screenshots} />
       <h2 className="Project__title">{title}</h2>
       <TechLogos logos={techLogos} />
       <p className="Project__description">{description}</p>

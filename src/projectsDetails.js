@@ -1,4 +1,4 @@
-import htmlLogo from './images/HTML5-logo.png';
+import htmlLogo from './images/html-logo.png';
 import cssLogo from './images/css-logo.png';
 import reactLogo from './images/react-logo.png';
 import nodeLogo from './images/nodejs-logo.png';
