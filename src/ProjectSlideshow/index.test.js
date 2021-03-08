@@ -2,9 +2,7 @@ import ReactDOM from 'react-dom';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import ProjectSlideshow from './index';
-import testFirst from '../images/test-first.png';
-import testMiddle from '../images/test-middle.png';
-import testLast from '../images/test-last.png';
+import testScreenshot from '../images/test.png';
 
 function renderNextImage(testScreenshots) {
   render(
@@ -17,15 +15,15 @@ function renderNextImage(testScreenshots) {
 describe('ProjectSlideshow Component', () => {
   const testScreenshots = [
     {
-      src: testFirst,
+      src: testScreenshot,
       alt: 'First test screenshot'
     },
     {
-      src: testMiddle,
+      src: testScreenshot,
       alt: 'Middle test screenshot'
     },
     {
-      src: testLast,
+      src: testScreenshot,
       alt: 'Last test screenshot'
     }
   ];

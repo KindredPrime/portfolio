@@ -9,7 +9,7 @@ exports[`ProjectSlideshow Component renders the content as expected 1`] = `
       <img
         alt="First test screenshot"
         class="ProjectSlideshow__screenshot"
-        src="test-first.png"
+        src="test.png"
       />
       <button
         class="ProjectSlideshow__button right"
@@ -35,7 +35,7 @@ exports[`ProjectSlideshow Component renders the next screenshot when the right a
       <img
         alt="Middle test screenshot"
         class="ProjectSlideshow__screenshot"
-        src="test-middle.png"
+        src="test.png"
       />
       <button
         class="ProjectSlideshow__button left"
@@ -71,7 +71,7 @@ exports[`ProjectSlideshow Component renders the previous screenshot when the lef
       <img
         alt="First test screenshot"
         class="ProjectSlideshow__screenshot"
-        src="test-first.png"
+        src="test.png"
       />
       <button
         class="ProjectSlideshow__button right"

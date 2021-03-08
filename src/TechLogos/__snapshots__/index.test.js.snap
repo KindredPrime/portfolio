@@ -9,7 +9,7 @@ exports[`TechLogos Component renders as expected 1`] = `
       <img
         alt="Test alt"
         class="Test class names"
-        src="test-first.png"
+        src="test.png"
       />
     </div>
   </div>

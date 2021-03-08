@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
-import testLogo from '../images/test-first.png';
+import testLogo from '../images/test.png';
 import TechLogos from './index';
 
 describe('TechLogos Component', () => {

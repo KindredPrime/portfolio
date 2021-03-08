@@ -1,29 +1,45 @@
-import htmlLogo from './images/html-logo.png';
-import cssLogo from './images/css-logo.png';
-import reactLogo from './images/react-logo.png';
-import nodeLogo from './images/nodejs-logo.png';
-import postgresqlLogo from './images/postgresql-logo.png';
-import jqueryLogo from './images/jquery-logo.png';
+// Technology logos
+import htmlLogo from './images/tech-logos/html.png';
+import cssLogo from './images/tech-logos/css.png';
+import reactLogo from './images/tech-logos/react.png';
+import nodeLogo from './images/tech-logos/nodejs.png';
+import postgresqlLogo from './images/tech-logos/postgresql.png';
+import jqueryLogo from './images/tech-logos/jquery.png';
+
+// VolunteerFinder screenshots
 import volunteerFinderHomepage
-  from './images/volunteer-finder/homepage-mobile.png';
+  from './images/screenshots/volunteer-finder/homepage-mobile.png';
 import volunteerFinderSearch
-  from './images/volunteer-finder/search-page-with-results-tablet.png';
+  from './images/screenshots/volunteer-finder/search-page-with-results-tablet.png';
 import volunteerFinderOrganization
-  from './images/volunteer-finder/organization-page-top-half-desktop.png';
+  from './images/screenshots/volunteer-finder/organization-page-top-half-desktop.png';
 import volunteerFinderAddPageTop
-  from './images/volunteer-finder/add-page-top-half-tablet.png';
+  from './images/screenshots/volunteer-finder/add-page-top-half-tablet.png';
 import volunteerFinderAddPageBottom
-  from './images/volunteer-finder/add-page-bottom-half-tablet.png';
+  from './images/screenshots/volunteer-finder/add-page-bottom-half-tablet.png';
+
+// Explore Wildlife screenshots
 import exploreWildlifeAbout
-  from './images/explore-wildlife-screenshots/about.png';
+  from './images/screenshots/explore-wildlife/about.png';
 import exploreWildlifeAddressSearch
-  from './images/explore-wildlife-screenshots/address-parameters.png';
+  from './images/screenshots/explore-wildlife/address-parameters.png';
 import exploreWildlifeAddressResults
-  from './images/explore-wildlife-screenshots/address-search-results.png';
+  from './images/screenshots/explore-wildlife/address-search-results.png';
 import exploreWildlifeMainSearch
-  from './images/explore-wildlife-screenshots/wildlife-parameters.png';
+  from './images/screenshots/explore-wildlife/wildlife-parameters.png';
 import exploreWildlifeFinalResults
-  from './images/explore-wildlife-screenshots/wildlife-search-results.png';
+  from './images/screenshots/explore-wildlife/wildlife-search-results.png';
+
+// Game of Thrones Quiz screenshots
+import gotQuizStartPage from './images/screenshots/got-quiz/start-page.png';
+import gotQuizQuestionPage
+  from './images/screenshots/got-quiz/question-page.png';
+import gotQuizCorrectAnswerPage
+  from './images/screenshots/got-quiz/correct-answer-page.png';
+import gotQuizWrongAnswerPage
+  from './images/screenshots/got-quiz/wrong-answer-page.png';
+import gotQuizResultsPage
+  from './images/screenshots/got-quiz/results-page.png';
 
 const allTechLogos = {
   html: {
@@ -149,6 +165,49 @@ const projectDetails = [
     `,
     repoLink: 'https://github.com/KindredPrime/explore-wildlife',
     liveLink: 'https://kindredprime.github.io/explore-wildlife/'
+  },
+  {
+    id: 3,
+    title: 'Game of Thrones Quiz',
+    techLogos: [
+      allTechLogos.html,
+      allTechLogos.css,
+      allTechLogos.jquery
+    ],
+    screenshots: [
+      {
+        src: gotQuizStartPage,
+        alt: 'Game of Thrones Quiz start page'
+      },
+      {
+        src: gotQuizQuestionPage,
+        alt: 'Game of Thrones Quiz question page'
+      },
+      {
+        src: gotQuizCorrectAnswerPage,
+        alt: 'Game of Thrones Quiz correct answer page'
+      },
+      {
+        src: gotQuizWrongAnswerPage,
+        alt: 'Game of Thrones Quiz wrong answer page'
+      },
+      {
+        src: gotQuizResultsPage,
+        alt: 'Game of Thrones Quiz results page'
+      }
+    ],
+    description: `
+      This is an interactive web app that allows users to take a quiz about the
+      Game of Thrones book series. The app goes through questions one by one,
+      rendering them in a <form> element, and keeps track of the question
+      number and the user’s score. The app also tells the user the correct
+      answer to the question after they pick their answer. When the quiz is
+      over, the app tells the user their final score and allows them to restart
+      the quiz. The app uses responsive design, semantic HTML, and it follows
+      a11y best practices.
+    `,
+    repoLink: 'https://github.com/KindredPrime/quiz-app',
+    liveLink: 'https://kindredprime.github.io/quiz-app/'
   }
 ];
 
