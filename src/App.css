@@ -1,0 +1,140 @@
+:root {
+  --main-bg-color: #5E3F09;
+  --emphasis-color: #00FFFF;
+  --border-color: #A1A1A1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  color: white;
+  background-color: var(--main-bg-color);
+}
+
+.App {
+  margin: 95px 10% 40px 10%;
+}
+
+.App.nav-expanded {
+  margin-top: 120px;
+}
+
+header {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Hind", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+p, a, button {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+/*
+  Hides content from users, without hiding it from screen readers
+*/
+.visually-hidden {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--emphasis-color);
+  font-size: 16px;
+}
+
+a:focus, a:hover {
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.button-look-alike {
+  color: black;
+  background-color: var(--emphasis-color);
+  border: 2px outset var(--border-color);
+  border-radius: 5px;
+  padding: 2px 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-look-alike:hover, .button-look-alike:focus {
+  color: var(--emphasis-color);
+  background-color: black;
+}
+
+/*
+  Tablet devices
+*/
+@media screen and (min-width: 690px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  a, p {
+    font-size: 18px;
+  }
+
+  p {
+    line-height: 27px
+  }
+
+  .App {
+    margin-top: 140px;
+  }
+}
+
+/*
+  Desktop/laptop computers
+*/
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 31px;
+  }
+
+  a, p {
+    font-size: 20px;
+  }
+
+  p {
+    line-height: 30px
+  }
+
+  .App {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+}

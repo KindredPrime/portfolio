@@ -1,0 +1,43 @@
+.Home__headline {
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.Home__headshot {
+  border: 1px solid var(--border-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 165px;
+  display: block;
+}
+
+/*
+  Tablet devices
+*/
+@media screen and (min-width: 690px) {
+  .Home__projects {
+    font-size: 20px;
+  }
+
+  .Home__headshot {
+    float: right;
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 92px;
+    margin-bottom: 5px;
+  }
+}
+
+/*
+  Desktop/laptop computers
+*/
+@media screen and (min-width: 1000px) {
+  .Home__headshot {
+    width: 25%;
+    margin-top: 93px;
+    margin-bottom: 10px;
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,56 @@
+.TechLogos img {
+  margin-right: 5%;
+}
+
+.TechLogos__html {
+  width: 55px;
+}
+
+.TechLogos__css {
+  width: 55px;
+}
+
+.TechLogos__html, .TechLogos__css {
+  /*
+    These apply to alt text when the image doesn't load
+  */
+  color: black;
+  font-size: 14px;
+}
+
+.TechLogos__jquery {
+  width: 50px;
+}
+
+.TechLogos__react {
+  width: 60px;
+}
+
+.TechLogos__node {
+  width: 70px;
+  padding: 4px;
+  background-color: white;
+}
+
+.TechLogos__postgresql {
+  width: 70px;
+  background-color: white;
+  padding: 3px;
+}
+
+.TechLogos__node, .TechLogos__postgresql {
+  margin-top: 15px;
+}
+
+/*
+  Tablet devices
+*/
+@media screen and (min-width: 690px) {
+  .TechLogos__jquery {
+    width: 70px;
+  }
+
+  .TechLogos__node, .TechLogos__postgresql {
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project Component renders content as expected 1`] = `
+<body>
+  <div>
+    <section
+      class="Project"
+    >
+      <div
+        class="ProjectSlideshow"
+      />
+      <h2
+        class="Project__title"
+      >
+        Test Title
+      </h2>
+      <div
+        class="TechLogos"
+      />
+      <p
+        class="Project__description"
+      >
+        Test description
+      </p>
+      <div
+        class="ProjectLinks"
+      >
+        <a
+          class="ProjectLinks__repo"
+          href="https://www.repo.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        <span
+          class="ProjectLinks__divider"
+        >
+          |
+        </span>
+        <a
+          class="ProjectLinks__live"
+          href="https://www.live.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Live
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+`;

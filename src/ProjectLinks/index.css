@@ -1,0 +1,12 @@
+.ProjectLinks {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.ProjectLinks__divider {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-weight: 900;
+  font-size: larger;
+}
