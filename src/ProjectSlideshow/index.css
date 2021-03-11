@@ -6,8 +6,9 @@
 }
 
 .ProjectSlideshow__screenshot {
-  border: 2px solid #A1A1A1;
+  border: 1px solid #A1A1A1;
   width: 100%;
+  box-shadow: 4px 4px 5px black;
 }
 
 .ProjectSlideshow__button {
@@ -51,6 +52,10 @@
     width: 75px;
     height: 75px;
     margin-top: -37px;
+  }
+
+  .ProjectSlideshow__screenshot {
+    box-shadow: 6px 6px 5px black;
   }
 }
 
