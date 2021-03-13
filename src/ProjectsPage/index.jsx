@@ -24,7 +24,7 @@ function ProjectsPage() {
             key={`project-${projectDetails.id}`}
             title={title}
             techLogos={techLogos}
-            screenshots={screenshots}
+            allScreenshots={screenshots}
             description={description}
             repoLink={repoLink}
             liveLink={liveLink}

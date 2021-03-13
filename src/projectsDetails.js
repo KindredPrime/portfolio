@@ -91,28 +91,34 @@ const projectDetails = [
       allTechLogos.node,
       allTechLogos.postgresql
     ],
-    screenshots: [
-      {
-        src: volunteerFinderHomepage,
-        alt: 'Welcome to VolunteerFinder (mobile view)'
-      },
-      {
-        src: volunteerFinderSearch,
-        alt: 'Search page with results (tablet view)'
-      },
-      {
-        src: volunteerFinderOrganization,
-        alt: 'Organization page (desktop view)'
-      },
-      {
-        src: volunteerFinderAddPageTop,
-        alt: 'Top of add organization page (tablet view)'
-      },
-      {
-        src: volunteerFinderAddPageBottom,
-        alt: 'Bottom of add organization page (tablet view)'
-      },
-    ],
+    screenshots: {
+      mobile: [
+        {
+          src: volunteerFinderHomepage,
+          alt: 'Welcome to VolunteerFinder'
+        }
+      ],
+      tablet: [
+        {
+          src: volunteerFinderSearch,
+          alt: 'Search page with results'
+        },
+        {
+          src: volunteerFinderAddPageTop,
+          alt: 'Top of add organization page'
+        },
+        {
+          src: volunteerFinderAddPageBottom,
+          alt: 'Bottom of add organization page'
+        }
+      ],
+      desktop: [
+        {
+          src: volunteerFinderOrganization,
+          alt: 'Organization page (desktop view)'
+        }
+      ]
+    },
     description: `
       VolunteerFinder helps people find organizations in the DC metropolitan
       area where people can volunteer to help.  Users can search by
@@ -132,28 +138,34 @@ const projectDetails = [
       allTechLogos.css,
       allTechLogos.jquery
     ],
-    screenshots: [
-      {
-        src: exploreWildlifeAbout,
-        alt: 'About Explore Wildlife (desktop view)'
-      },
-      {
-        src: exploreWildlifeAddressSearch,
-        alt: 'Explore Wildlife address search parameters (mobile view)'
-      },
-      {
-        src: exploreWildlifeAddressResults,
-        alt: 'Explore Wildlife address search results (tablet view)'
-      },
-      {
-        src: exploreWildlifeMainSearch,
-        alt: 'Explore Wildlife main search parameters (tablet view)'
-      },
-      {
-        src: exploreWildlifeFinalResults,
-        alt: 'Explore Wildlife final search results (tablet view)'
-      }
-    ],
+    screenshots: {
+      mobile: [
+        {
+          src: exploreWildlifeAddressSearch,
+          alt: 'Explore Wildlife address search parameters'
+        }
+      ],
+      tablet: [
+        {
+          src: exploreWildlifeAddressResults,
+          alt: 'Explore Wildlife address search results'
+        },
+        {
+          src: exploreWildlifeMainSearch,
+          alt: 'Explore Wildlife main search parameters'
+        },
+        {
+          src: exploreWildlifeFinalResults,
+          alt: 'Explore Wildlife final search results'
+        }
+      ],
+      desktop: [
+        {
+          src: exploreWildlifeAbout,
+          alt: 'About Explore Wildlife'
+        }
+      ]
+    },
     description: `
       The Explore Wildlife App helps people discover what kinds of wildlife
       have been seen in locations worldwide. Users can refine their search by
@@ -174,28 +186,32 @@ const projectDetails = [
       allTechLogos.css,
       allTechLogos.jquery
     ],
-    screenshots: [
-      {
-        src: gotQuizStartPage,
-        alt: 'Game of Thrones Quiz start page'
-      },
-      {
-        src: gotQuizQuestionPage,
-        alt: 'Game of Thrones Quiz question page'
-      },
-      {
-        src: gotQuizCorrectAnswerPage,
-        alt: 'Game of Thrones Quiz correct answer page'
-      },
-      {
-        src: gotQuizWrongAnswerPage,
-        alt: 'Game of Thrones Quiz wrong answer page'
-      },
-      {
-        src: gotQuizResultsPage,
-        alt: 'Game of Thrones Quiz results page'
-      }
-    ],
+    screenshots: {
+      mobile: [],
+      tablet: [],
+      desktop: [
+        {
+          src: gotQuizStartPage,
+          alt: 'Game of Thrones Quiz start page'
+        },
+        {
+          src: gotQuizQuestionPage,
+          alt: 'Game of Thrones Quiz question page'
+        },
+        {
+          src: gotQuizCorrectAnswerPage,
+          alt: 'Game of Thrones Quiz correct answer page'
+        },
+        {
+          src: gotQuizWrongAnswerPage,
+          alt: 'Game of Thrones Quiz wrong answer page'
+        },
+        {
+          src: gotQuizResultsPage,
+          alt: 'Game of Thrones Quiz results page'
+        }
+      ]
+    },
     description: `
       This is an interactive web app that allows users to take a quiz about the
       Game of Thrones book series. The app goes through questions one by one,

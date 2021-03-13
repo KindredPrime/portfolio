@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import ProjectSlideshow from './index';
-import testScreenshot from '../images/test.png';
+import testScreenshot from '../images/testing/test.png';
 
 function renderNextImage(testScreenshots) {
   render(
