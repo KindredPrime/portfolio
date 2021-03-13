@@ -26,7 +26,6 @@ exports[`Project Component renders content as expected 1`] = `
         class="ProjectLinks"
       >
         <a
-          class="ProjectLinks__repo"
           href="https://www.repo.com"
           rel="noreferrer"
           target="_blank"
@@ -39,7 +38,6 @@ exports[`Project Component renders content as expected 1`] = `
           |
         </span>
         <a
-          class="ProjectLinks__live"
           href="https://www.live.com"
           rel="noreferrer"
           target="_blank"

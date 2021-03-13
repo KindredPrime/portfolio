@@ -11,7 +11,8 @@ function Project(props) {
     techLogos,
     description,
     repoLink,
-    liveLink
+    liveLink,
+    disabled
   } = props;
 
   return (
@@ -20,7 +21,7 @@ function Project(props) {
       <h2 className="Project__title">{title}</h2>
       <TechLogos logos={techLogos} />
       <p className="Project__description">{description}</p>
-      <ProjectLinks repo={repoLink} live={liveLink} />
+      <ProjectLinks repo={repoLink} live={liveLink} disabled={disabled} />
     </section>
   );
 }

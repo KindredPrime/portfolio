@@ -10,3 +10,13 @@
   font-weight: 900;
   font-size: larger;
 }
+
+.ProjectLinks__disabled {
+  display: inline-block;
+}
+
+.ProjectLinks__disabled span {
+  text-decoration: line-through;
+  color: var(--emphasis-color);
+  margin-right: 5px;
+}

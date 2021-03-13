@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import './index.css';
 
 function ProjectLinks(props) {
-  const { repo, live } = props;
+  const { repo, live, disabled } = props;
 
   return (
     <div className="ProjectLinks">
@@ -10,19 +10,22 @@ function ProjectLinks(props) {
         href={repo}
         target="_blank"
         rel="noreferrer"
-        className="ProjectLinks__repo"
       >
         GitHub
       </a>
       <span className="ProjectLinks__divider">|</span>
-      <a
-        href={live}
-        target="_blank"
-        rel="noreferrer"
-        className="ProjectLinks__live"
-      >
-        Live
-      </a>
+      {disabled
+        ? <p className="ProjectLinks__disabled">
+          <span>Live</span>
+          (Currently disabled while being fixed)
+        </p>
+        : <a
+          href={live}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Live
+        </a>}
     </div>
   );
 }

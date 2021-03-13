@@ -122,7 +122,8 @@ const projectDetails = [
       description, and the cause(s) it supports.
     `,
     repoLink: 'https://github.com/KindredPrime/volunteer-finder',
-    liveLink: 'https://volunteer-finder.vercel.app/'
+    liveLink: 'https://volunteer-finder.vercel.app/',
+    disabled: true
   },
   {
     id: 2,

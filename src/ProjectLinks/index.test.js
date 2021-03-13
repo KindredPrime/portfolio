@@ -19,4 +19,16 @@ describe('ProjectLinks Component', () => {
 
     expect(document.body).toMatchSnapshot();
   });
+
+  it('renders a disabled live link', () => {
+    render(
+      <ProjectLinks
+        repo=""
+        live=""
+        disabled={true}
+      />
+    );
+
+    expect(document.body).toMatchSnapshot();
+  });
 });

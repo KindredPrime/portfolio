@@ -1,5 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ProjectLinks Component renders a disabled live link 1`] = `
+<body>
+  <div>
+    <div
+      class="ProjectLinks"
+    >
+      <a
+        href=""
+        rel="noreferrer"
+        target="_blank"
+      >
+        GitHub
+      </a>
+      <span
+        class="ProjectLinks__divider"
+      >
+        |
+      </span>
+      <p
+        class="ProjectLinks__disabled"
+      >
+        <span>
+          Live
+        </span>
+        (Currently disabled while being fixed)
+      </p>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`ProjectLinks Component renders content as expected 1`] = `
 <body>
   <div>
@@ -7,7 +38,6 @@ exports[`ProjectLinks Component renders content as expected 1`] = `
       class="ProjectLinks"
     >
       <a
-        class="ProjectLinks__repo"
         href="https://www.repo.com"
         rel="noreferrer"
         target="_blank"
@@ -20,7 +50,6 @@ exports[`ProjectLinks Component renders content as expected 1`] = `
         |
       </span>
       <a
-        class="ProjectLinks__live"
         href="https://www.live.com"
         rel="noreferrer"
         target="_blank"

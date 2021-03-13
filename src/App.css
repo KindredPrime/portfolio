@@ -43,8 +43,11 @@ p, a, button {
   font-family: "Open Sans", sans-serif;
 }
 
-p {
+a, p {
   font-size: 16px;
+}
+
+p {
   line-height: 24px;
   text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
@@ -65,7 +68,6 @@ p {
 a {
   text-decoration: none;
   color: var(--emphasis-color);
-  font-size: 16px;
 }
 
 a:focus, a:hover {

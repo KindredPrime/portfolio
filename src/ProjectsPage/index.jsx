@@ -16,7 +16,8 @@ function ProjectsPage() {
           screenshots,
           description,
           repoLink,
-          liveLink
+          liveLink,
+          disabled
         } = projectDetails;
 
         return (
@@ -28,6 +29,7 @@ function ProjectsPage() {
             description={description}
             repoLink={repoLink}
             liveLink={liveLink}
+            disabled={disabled}
           />
         );
       })}
