@@ -123,7 +123,6 @@ const projectDetails = [
     `,
     repoLink: 'https://github.com/KindredPrime/volunteer-finder',
     liveLink: 'https://volunteer-finder.vercel.app/',
-    disabled: true
   },
   {
     id: 2,
