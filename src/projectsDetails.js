@@ -6,17 +6,43 @@ import nodeLogo from './images/tech-logos/nodejs.png';
 import postgresqlLogo from './images/tech-logos/postgresql.png';
 import jqueryLogo from './images/tech-logos/jquery.png';
 
-// VolunteerFinder screenshots
-import volunteerFinderHomepage
-  from './images/screenshots/volunteer-finder/homepage-mobile.png';
-import volunteerFinderSearch
-  from './images/screenshots/volunteer-finder/search-page-with-results-tablet.png';
-import volunteerFinderOrganization
-  from './images/screenshots/volunteer-finder/organization-page-top-half-desktop.png';
-import volunteerFinderAddPageTop
-  from './images/screenshots/volunteer-finder/add-page-top-half-tablet.png';
-import volunteerFinderAddPageBottom
-  from './images/screenshots/volunteer-finder/add-page-bottom-half-tablet.png';
+/**
+ * VolunteerFinder screenshots
+ */
+// Mobile
+import volunteerFinderHomepageMobile
+  from './images/screenshots/volunteer-finder/mobile/homepage.png';
+import volunteerFinderSearchMobileTop
+  from './images/screenshots/volunteer-finder/mobile/search-page-top.png';
+import volunteerFinderSearchMobileBottom
+  from './images/screenshots/volunteer-finder/mobile/search-page-bottom.png';
+import volunteerFinderAddMobile
+  from './images/screenshots/volunteer-finder/mobile/add-page.png';
+import volunteerFinderOrgMobileTop
+  from './images/screenshots/volunteer-finder/mobile/org-page-top.png';
+import volunteerFinderOrgMobileBottom
+  from './images/screenshots/volunteer-finder/mobile/org-page-bottom.png';
+
+// Tablet
+import volunteerFinderHomepageTablet
+  from './images/screenshots/volunteer-finder/tablet/homepage.png';
+import volunteerFinderSearchTablet
+  from './images/screenshots/volunteer-finder/tablet/search-page.png';
+import volunteerFinderAddTablet
+  from './images/screenshots/volunteer-finder/tablet/add-page.png';
+import volunteerFinderOrgTablet
+  from './images/screenshots/volunteer-finder/tablet/org-page.png';
+
+// Desktop
+import volunteerFinderHomepageDesktop
+  from './images/screenshots/volunteer-finder/desktop/homepage.png';
+import volunteerFinderSearchDesktop
+  from './images/screenshots/volunteer-finder/desktop/search-page.png';
+import volunteerFinderAddDesktop
+  from './images/screenshots/volunteer-finder/desktop/add-page.png';
+import volunteerFinderOrgDesktop
+  from './images/screenshots/volunteer-finder/desktop/org-page.png';
+
 
 // Explore Wildlife screenshots
 import exploreWildlifeAbout
@@ -94,28 +120,64 @@ const projectDetails = [
     screenshots: {
       mobile: [
         {
-          src: volunteerFinderHomepage,
+          src: volunteerFinderHomepageMobile,
           alt: 'Welcome to VolunteerFinder'
+        },
+        {
+          src: volunteerFinderSearchMobileTop,
+          alt: 'Search page'
+        },
+        {
+          src: volunteerFinderSearchMobileBottom,
+          alt: 'Search page results'
+        },
+        {
+          src: volunteerFinderAddMobile,
+          alt: 'Add organization page'
+        },
+        {
+          src: volunteerFinderOrgMobileTop,
+          alt: 'Organization info page: title, contact info, about'
+        },
+        {
+          src: volunteerFinderOrgMobileBottom,
+          alt: 'Organization info page: causes, delete button'
         }
       ],
       tablet: [
         {
-          src: volunteerFinderSearch,
-          alt: 'Search page with results'
+          src: volunteerFinderHomepageTablet,
+          alt: 'Welcome to VolunteerFinder'
         },
         {
-          src: volunteerFinderAddPageTop,
-          alt: 'Top of add organization page'
+          src: volunteerFinderSearchTablet,
+          alt: 'Organization search page'
         },
         {
-          src: volunteerFinderAddPageBottom,
-          alt: 'Bottom of add organization page'
+          src: volunteerFinderAddTablet,
+          alt: 'Add organization page'
+        },
+        {
+          src: volunteerFinderOrgTablet,
+          alt: 'Organization info page'
         }
       ],
       desktop: [
         {
-          src: volunteerFinderOrganization,
-          alt: 'Organization page (desktop view)'
+          src: volunteerFinderHomepageDesktop,
+          alt: 'Welcome to VolunteerFinder'
+        },
+        {
+          src: volunteerFinderSearchDesktop,
+          alt: 'Organization search page'
+        },
+        {
+          src: volunteerFinderAddDesktop,
+          alt: 'Add organization page'
+        },
+        {
+          src: volunteerFinderOrgDesktop,
+          alt: 'Organization info page'
         }
       ]
     },
